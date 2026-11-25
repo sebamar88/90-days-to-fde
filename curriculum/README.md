@@ -6,7 +6,7 @@ The days are a recommended sequence, not a daily time promise. Each day adds evi
 
 Do not assume AI is the answer. The learner must validate the workflow and compare a simple rules-based baseline before proposing a model. The capstone is a bounded, auditable request-intake assistant with human approval before work-order creation or routing changes.
 
-**Status:** Days 1–15 are Ready. Days 16–90 are roadmap entries; their details are scope targets, not finished lessons.
+**Status:** Days 1–30 are Ready. Days 31–90 are roadmap entries; their details are scope targets, not finished lessons.
 
 ## Phase 1 — Foundations & Business Discovery (Days 1–15)
 
@@ -32,7 +32,7 @@ Do not assume AI is the answer. The learner must validate the workflow and compa
 
 **Outcome:** a tested request-intake service with a deterministic baseline, provider-neutral model boundary, structured outputs, representative evaluation set, and explicit cost/latency limits.
 
-16. Establish a runnable project and interface contract · 17. Build a deterministic intake baseline · 18. Prepare a synthetic, privacy-safe dataset · 19. Define the model boundary and provider adapter · 20. Produce schema-constrained outputs · 21. Handle ambiguity and abstention · 22. Add retrieval only when evidence requires it · 23. Ground responses in approved knowledge · 24. Integrate with a work-order API sandbox · 25. Make retries and idempotency safe · 26. Manage prompts as versioned artifacts · 27. Measure latency and cost · 28. Compare model and non-model baselines · 29. Package a repeatable local demo · 30. Phase review: tested AI service
+16. [Set up the service and contract](phase-2-production-ai/day-16.md) · 17. [Build a deterministic baseline](phase-2-production-ai/day-17.md) · 18. [Create a synthetic evaluation set](phase-2-production-ai/day-18.md) · 19. [Define a provider adapter](phase-2-production-ai/day-19.md) · 20. [Return schema-validated suggestions](phase-2-production-ai/day-20.md) · 21. [Abstain when the request is ambiguous](phase-2-production-ai/day-21.md) · 22. [Decide whether retrieval is justified](phase-2-production-ai/day-22.md) · 23. [Ground suggestions in approved knowledge](phase-2-production-ai/day-23.md) · 24. [Integrate with a work-order sandbox](phase-2-production-ai/day-24.md) · 25. [Bound retries and make writes idempotent](phase-2-production-ai/day-25.md) · 26. [Version prompts and schemas](phase-2-production-ai/day-26.md) · 27. [Measure latency and cost](phase-2-production-ai/day-27.md) · 28. [Compare model and rules baselines](phase-2-production-ai/day-28.md) · 29. [Package a repeatable local demo](phase-2-production-ai/day-29.md) · 30. [Phase review: production AI service](phase-2-production-ai/day-30.md)
 
 ## Phase 3 — Agentic Systems & Enterprise Integration (Days 31–45)
 

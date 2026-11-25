@@ -48,7 +48,8 @@ function checkLessons() {
     }
     for (const field of requiredFields) if (!fields.has(field)) errors.push(`${relative(file)}: missing front matter field ${field}`);
     if (fields.get('day') !== String(day)) errors.push(`${relative(file)}: front matter day does not match filename`);
-    if (fields.get('phase') !== '1') errors.push(`${relative(file)}: expected phase 1`);
+    const phaseMatch = /[/\\]phase-(\d+)-/.exec(file);
+    if (!phaseMatch || fields.get('phase') !== phaseMatch[1]) errors.push(`${relative(file)}: front matter phase does not match its directory`);
     if (!['Ready', 'Draft', 'In Progress'].includes(fields.get('status'))) errors.push(`${relative(file)}: invalid status`);
 
     const headings = new Set([...text.matchAll(/^##\s+(.+?)\s*$/gm)].map((heading) => heading[1].trim().toLowerCase()));
@@ -58,8 +59,8 @@ function checkLessons() {
       }
     }
   }
-  for (let day = 1; day <= 15; day++) if (!days.has(day)) errors.push(`expected exactly one lesson for days 1–15; missing day ${day}`);
-  for (const day of days.keys()) if (day < 1 || day > 15) errors.push(`unexpected lesson day outside 1–15: ${day}`);
+  for (let day = 1; day <= 30; day++) if (!days.has(day)) errors.push(`expected exactly one lesson for days 1–30; missing day ${day}`);
+  for (const day of days.keys()) if (day < 1 || day > 30) errors.push(`unexpected lesson day outside 1–30: ${day}`);
 }
 
 function checkRoadmap() {
@@ -68,6 +69,36 @@ function checkRoadmap() {
   const days = new Set([...text.matchAll(/(?:^|[·\s])([1-9]\d?)\./gm)].map((match) => Number(match[1])));
   for (let day = 1; day <= 90; day++) if (!days.has(day)) errors.push(`curriculum/README.md: missing roadmap entry for day ${day}`);
   for (const day of days) if (day < 1 || day > 90) errors.push(`curriculum/README.md: unexpected roadmap day ${day}`);
+}
+
+function checkSyntheticDataset() {
+  const file = path.join(root, 'curriculum', 'phase-2-production-ai', 'starter', 'data', 'evaluation.jsonl');
+  const seen = new Set();
+  const allowedCategories = new Set(['electrical', 'hvac', 'plumbing', 'other', 'unknown']);
+  const allowedUrgencies = new Set(['routine', 'urgent', 'emergency', 'unknown']);
+  const allowedMissing = new Set(['location', 'category', 'urgency']);
+  const lines = fs.readFileSync(file, 'utf8').split(/\r?\n/).filter((line) => line.trim());
+  if (lines.length < 8) errors.push('Phase 2 synthetic evaluation set must contain at least 8 cases');
+  lines.forEach((line, index) => {
+    let row;
+    try {
+      row = JSON.parse(line);
+    } catch {
+      errors.push(`${relative(file)}:${index + 1}: invalid JSON`);
+      return;
+    }
+    for (const field of ['case_id', 'text', 'expected_category', 'expected_location', 'expected_urgency', 'expected_missing_fields']) {
+      if (!(field in row)) errors.push(`${relative(file)}:${index + 1}: missing ${field}`);
+    }
+    if (!row.case_id || seen.has(row.case_id)) errors.push(`${relative(file)}:${index + 1}: missing or duplicate case_id`);
+    seen.add(row.case_id);
+    if (!row.text?.trim()) errors.push(`${relative(file)}:${index + 1}: empty text`);
+    if (!allowedCategories.has(row.expected_category)) errors.push(`${relative(file)}:${index + 1}: invalid expected_category`);
+    if (!allowedUrgencies.has(row.expected_urgency)) errors.push(`${relative(file)}:${index + 1}: invalid expected_urgency`);
+    if (!Array.isArray(row.expected_missing_fields) || row.expected_missing_fields.some((field) => !allowedMissing.has(field))) {
+      errors.push(`${relative(file)}:${index + 1}: invalid expected_missing_fields`);
+    }
+  });
 }
 
 function checkMarkdownLinks() {
@@ -94,11 +125,12 @@ function checkMarkdownLinks() {
 
 checkLessons();
 checkRoadmap();
+checkSyntheticDataset();
 checkMarkdownLinks();
 if (errors.length) {
   for (const item of errors) console.error(`ERROR: ${item}`);
   console.error(`Curriculum validation failed with ${errors.length} issue(s).`);
   process.exitCode = 1;
 } else {
-  console.log('Curriculum validation passed: 15 lessons, 90 roadmap days, local Markdown links.');
+  console.log('Curriculum validation passed: 30 lessons, 90 roadmap days, local Markdown links.');
 }

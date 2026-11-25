@@ -1,0 +1,39 @@
+---
+day: 19
+phase: 2
+status: Ready
+title: Define a provider adapter
+estimated_effort: 75–100 minutes
+---
+
+# Day 19 — Define a provider adapter
+
+## Why this matters
+
+Provider independence comes from a narrow application-owned contract, not from a universal SDK that hides every difference. Keep provider details at the edge and make the offline stub useful.
+
+## Scenario
+
+The service needs one operation: propose an intake draft from a request. It must run in CI and learner machines without API credentials.
+
+## Outcomes
+
+- Define a typed provider protocol around the task, not a vendor API.
+- Inject the provider into the service.
+- Normalize provider errors without erasing useful failure categories.
+
+## Exercise
+
+Implement `IntakeProvider.extract(request) -> IntakeSuggestion`. Keep `RuleBasedProvider` as the default. Add a `FakeProvider` in tests that returns a fixed suggestion and another that raises a timeout. Confirm the FastAPI route uses dependency injection and that provider names/configuration never leak into the response contract.
+
+## Deliverable
+
+An adapter protocol, deterministic implementation, test fake, and a one-page note on which provider capabilities cannot be normalized away.
+
+## Assessment
+
+Pass when app/service tests run with the fake, default behavior needs no credentials, and adapter errors map to explicit service outcomes rather than silent empty drafts.
+
+## Reflection
+
+What provider-specific feature would create enough value to justify adding it to the interface?

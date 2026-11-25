@@ -4,8 +4,8 @@ The curriculum spans 90 guided learning days across six phases. Days 1–15 are 
 
 | Phase | Days | Focus | Status |
 |---|---:|---|---|
-| 1 | 1–15 | Foundations & Business Discovery | Ready |
-| 2 | 16–30 | Production AI Engineering | Planned |
+| 1 | 1–15 | Foundations & Business Discovery | Complete; learner feedback ongoing |
+| 2 | 16–30 | Production AI Engineering | In progress |
 | 3 | 31–45 | Agentic Systems & Enterprise Integration | Planned |
 | 4 | 46–60 | Reliability, Evaluation & Security | Planned |
 | 5 | 61–75 | Enterprise Deployment & Delivery | Planned |
