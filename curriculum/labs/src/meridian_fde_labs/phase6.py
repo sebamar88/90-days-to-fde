@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import math
+import re
+from collections.abc import Mapping
 from typing import Protocol
 
 from meridian_fde_labs.phase3 import AccessDenied, Actor, InvalidTransition, ToolWorkflow
@@ -55,31 +58,70 @@ class CapstoneService:
     ) -> dict[str, str]:
         prior = self.workflow.idempotency.get(idempotency_key)
         if prior:
-            prior_hash, result = prior
-            if prior_hash != preview_hash:
-                raise InvalidTransition("idempotency key reused with changed preview")
             preview = self.workflow.previews.get(request_id)
-            if preview is None or self.workflow.approved_by.get(request_id) != actor.subject:
-                raise AccessDenied("submission actor must own the approval")
-            if actor.role != "coordinator" or actor.region != preview.region:
-                raise AccessDenied("coordinator is not authorized for this site")
-            if preview.preview_hash != preview_hash:
+            if preview is None or preview.preview_hash != preview_hash:
                 raise InvalidTransition("preview changed; approval rejected")
-            return dict(result)
+            return self.workflow.submit(request_id, actor, idempotency_key)
 
         self.workflow.approve(request_id, actor, preview_hash)
         return self.workflow.submit(request_id, actor, idempotency_key)
 
 
 def final_release_decision(
-    evaluation: dict[str, object], operations: dict[str, object]
+    evaluation: Mapping[str, object], operations: Mapping[str, object]
 ) -> dict[str, object]:
     blockers: list[str] = []
-    if evaluation.get("release_pass") is not True:
-        blockers.append("evaluation_failed")
-    if operations.get("decision") != "proceed_to_review":
-        blockers.extend(operations.get("blockers", ["operational_evidence_incomplete"]))
+
+    if not isinstance(evaluation, Mapping):
+        blockers.append("evaluation_evidence_invalid")
+    else:
+        case_count = evaluation.get("case_count")
+        accuracy = evaluation.get("accuracy")
+        unauthorized_writes = evaluation.get("unauthorized_write_count")
+        if (
+            not isinstance(case_count, int)
+            or isinstance(case_count, bool)
+            or case_count < 1
+            or not isinstance(accuracy, (int, float))
+            or isinstance(accuracy, bool)
+            or not 0 <= accuracy <= 1
+            or not math.isfinite(accuracy)
+            or not isinstance(unauthorized_writes, int)
+            or isinstance(unauthorized_writes, bool)
+            or unauthorized_writes < 0
+        ):
+            blockers.append("evaluation_evidence_invalid")
+        if evaluation.get("release_pass") is not True:
+            blockers.append("evaluation_failed")
+        if isinstance(unauthorized_writes, int) and not isinstance(unauthorized_writes, bool) and unauthorized_writes > 0:
+            blockers.append("unauthorized_write")
+
+    if not isinstance(operations, Mapping) or set(operations) != {"decision", "blockers"}:
+        blockers.append("operational_evidence_invalid")
+    else:
+        decision = operations.get("decision")
+        raw_blockers = operations.get("blockers")
+        valid_blockers = (
+            isinstance(raw_blockers, list)
+            and all(isinstance(item, str) and re.fullmatch(r"[a-z][a-z0-9_]{0,63}", item) for item in raw_blockers)
+            and len(set(raw_blockers)) == len(raw_blockers)
+        )
+        if not valid_blockers:
+            blockers.append("operational_evidence_invalid")
+        elif decision == "proceed_to_review" and not raw_blockers:
+            pass
+        elif decision == "block":
+            blockers.extend(raw_blockers or ["operations_blocked"])
+        elif decision == "proceed_to_review":
+            blockers.append("operational_evidence_contradictory")
+            blockers.extend(raw_blockers)
+        else:
+            blockers.append("operational_decision_invalid")
+
+    if not blockers:
+        return {"decision": "proceed_to_review", "blockers": []}
+
     return {
-        "decision": "block" if blockers else "proceed_to_review",
+        "decision": "block",
         "blockers": sorted(set(blockers)),
     }

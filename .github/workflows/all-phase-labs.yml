@@ -29,9 +29,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install Phase 2 service and tests
-        run: python -m pip install -e "../phase-2-production-ai/starter[test]"
-      - name: Install shared lab test tools
-        run: python -m pip install -e ".[test]"
-      - name: Run every phase lab suite
-        run: python -m pytest tests ../phase-2-production-ai/starter/tests
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
+        with:
+          enable-cache: true
+      - name: Install locked shared lab dependencies
+        run: uv sync --locked --extra test
+      - name: Run cross-phase lab tests
+        run: uv run --locked pytest tests

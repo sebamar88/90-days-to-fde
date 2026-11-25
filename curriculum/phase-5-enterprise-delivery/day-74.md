@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-74
 day: 74
 phase: 5
-status: Ready
+locale: en
+slug: deliver-the-customer-handoff
 title: Deliver the customer handoff
-estimated_effort: 75–100 minutes
+description: A handoff transfers context and operating responsibility, not just code.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-73
+objectives:
+  - Summarize purpose, architecture, and operational boundaries.
+  - Demonstrate setup, safe use, and failure recovery.
+  - Transfer unresolved decisions with owners and evidence gaps.
+tags:
+  - phase-5
+  - customer-handoff
+skills:
+  - customer-handoff
 ---
 
 # Day 74 — Deliver the customer handoff

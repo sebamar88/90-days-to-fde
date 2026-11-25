@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-22
 day: 22
 phase: 2
-status: Ready
+locale: en
+slug: decide-whether-retrieval-is-justified
 title: Decide whether retrieval is justified
-estimated_effort: 75–100 minutes
+description: Retrieval adds ingestion, permissions, freshness, relevance, and evaluation work.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-21
+objectives:
+  - Identify which fields require external knowledge and which do not.
+  - Compare a small approved lookup table with a retrieval system.
+  - Define evidence needed before adding a vector database.
+tags:
+  - phase-2
+  - retrieval-selection
+skills:
+  - retrieval-selection
 ---
 
 # Day 22 — Decide whether retrieval is justified

@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-07
 day: 7
 phase: 1
-status: Ready
+locale: en
+slug: define-outcomes-and-guardrails
 title: Define outcomes and guardrails
-estimated_effort: 75–100 minutes
+description: “Use AI” is not a success measure.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-06
+objectives:
+  - Define an outcome metric with a clear numerator, denominator, and observation window.
+  - Pair it with quality and safety guardrails.
+  - State what baseline data is needed before setting a target.
+tags:
+  - phase-1
+  - metric-design
+skills:
+  - metric-design
 ---
 
 # Day 7 — Define outcomes and guardrails

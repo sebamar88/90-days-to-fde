@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-83
 day: 83
 phase: 6
-status: Ready
+locale: en
+slug: test-with-a-simulated-customer-panel
 title: Test with a simulated customer panel
-estimated_effort: 75–100 minutes
+description: Technical correctness does not guarantee that users understand the system or can recover from its suggestions.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-82
+objectives:
+  - Observe whether participants can complete and correct the workflow.
+  - Capture friction without leading the participants.
+  - Separate role-play observations from verified user research.
+tags:
+  - phase-6
+  - usability-testing
+skills:
+  - usability-testing
 ---
 
 # Day 83 — Test with a simulated customer panel

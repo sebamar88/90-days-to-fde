@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-72
 day: 72
 phase: 5
-status: Ready
+locale: en
+slug: conduct-a-launch-readiness-review
 title: Conduct a launch readiness review
-estimated_effort: 90–120 minutes
+description: Readiness is a cross-functional decision.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-71
+objectives:
+  - Review evidence and open conditions across technical and customer workstreams.
+  - Assign go/no-go authority and owners.
+  - Distinguish a learning recommendation from customer authorization.
+tags:
+  - phase-5
+  - readiness-gates
+skills:
+  - readiness-gates
 ---
 
 # Day 72 — Conduct a launch readiness review

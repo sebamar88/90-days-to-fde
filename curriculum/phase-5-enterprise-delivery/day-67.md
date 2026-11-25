@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-67
 day: 67
 phase: 5
-status: Ready
+locale: en
+slug: write-an-operations-runbook
 title: Write an operations runbook
-estimated_effort: 75–100 minutes
+description: Operators need concise actions for expected failures, safe containment, and escalation.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-66
+objectives:
+  - Turn alerts and states into safe operator steps.
+  - Include impact checks, containment, and recovery verification.
+  - Separate prototype commands from unimplemented production actions.
+tags:
+  - phase-5
+  - incident-runbooks
+skills:
+  - incident-runbooks
 ---
 
 # Day 67 — Write an operations runbook

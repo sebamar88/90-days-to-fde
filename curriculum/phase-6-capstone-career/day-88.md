@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-88
 day: 88
 phase: 6
-status: Ready
+locale: en
+slug: practice-customer-and-technical-interviews
 title: Practice customer and technical interviews
-estimated_effort: 75–100 minutes
+description: FDE interviews test listening, trade-off reasoning, delivery judgment, and communication under ambiguity as well as implementation skill.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-87
+objectives:
+  - Ask clarifying questions before proposing architecture.
+  - Explain one technical trade-off and one failure decision clearly.
+  - Reflect on feedback without overstating contribution or outcome.
+tags:
+  - phase-6
+  - interview-communication
+skills:
+  - interview-communication
 ---
 
 # Day 88 — Practice customer and technical interviews

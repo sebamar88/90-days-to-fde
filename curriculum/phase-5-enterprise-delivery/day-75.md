@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-75
 day: 75
 phase: 5
-status: Ready
+locale: en
+slug: phase-review-deployment-and-adoption-packet
 title: Phase review — deployment and adoption packet
-estimated_effort: 90–120 minutes
+description: Successful delivery is measured by reproducibility, safe operation, and user value—not by whether a service was pushed to a cloud account.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: phase-assessment
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-74
+objectives:
+  - Demonstrate environment setup, release controls, and rollback.
+  - Explain operating cost, ownership, training, and measurement limits.
+  - Hand off risks and open customer approvals accurately.
+tags:
+  - phase-5
+  - delivery-review
+skills:
+  - delivery-review
 ---
 
 # Day 75 — Phase review: deployment and adoption packet

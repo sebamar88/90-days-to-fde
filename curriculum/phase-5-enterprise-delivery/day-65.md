@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-65
 day: 65
 phase: 5
-status: Ready
+locale: en
+slug: define-rollback-and-release-controls
 title: Define rollback and release controls
-estimated_effort: 75–100 minutes
+description: A release without an observable stop condition is not controlled.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-64
+objectives:
+  - Define staged promotion and release owners.
+  - Select rollback triggers based on safety and service indicators.
+  - Separate code rollback from irreversible external side effects.
+tags:
+  - phase-5
+  - release-rollback
+skills:
+  - release-rollback
 ---
 
 # Day 65 — Define rollback and release controls

@@ -8,6 +8,10 @@ __pycache__/
 .coverage
 htmlcov/
 
+# JavaScript tooling dependencies
+node_modules/
+npm-debug.log*
+
 # Local secrets and environment overrides
 .env
 .env.*

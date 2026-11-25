@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-38
 day: 38
 phase: 3
-status: Ready
+locale: en
+slug: map-enterprise-system-boundaries
 title: Map enterprise system boundaries
-estimated_effort: 75–100 minutes
+description: Integration work crosses ownership, data, identity, and operational boundaries.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-37
+objectives:
+  - Map trust zones, data flows, and owners.
+  - Identify where identity and policy are enforced.
+  - Record integration assumptions that need customer confirmation.
+tags:
+  - phase-3
+  - system-integration
+skills:
+  - system-integration
 ---
 
 # Day 38 — Map enterprise system boundaries

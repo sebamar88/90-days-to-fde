@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-69
 day: 69
 phase: 5
-status: Ready
+locale: en
+slug: plan-user-training-and-change-adoption
 title: Plan user training and change adoption
-estimated_effort: 75–100 minutes
+description: An assistant changes how people review and route work.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-68
+objectives:
+  - Identify role-specific tasks and training needs.
+  - Teach review, correction, abstention, and escalation behavior.
+  - Measure comprehension without implying adoption equals success.
+tags:
+  - phase-5
+  - change-management
+skills:
+  - change-management
 ---
 
 # Day 69 — Plan user training and change adoption

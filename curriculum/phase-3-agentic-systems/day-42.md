@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-42
 day: 42
 phase: 3
-status: Ready
+locale: en
+slug: simulate-a-stakeholder-escalation
 title: Simulate a stakeholder escalation
-estimated_effort: 60–90 minutes
+description: FDE work includes surfacing trade-offs when stakeholder goals conflict.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: intermediate
+duration:
+  min: 60
+  max: 90
+prerequisites:
+  - day-41
+objectives:
+  - Separate observed facts, assumptions, and requested decisions.
+  - Present options with impact, owner, and evidence gap.
+  - Recommend a reversible next step without implying approval.
+tags:
+  - phase-3
+  - stakeholder-communication
+skills:
+  - stakeholder-communication
 ---
 
 # Day 42 — Simulate a stakeholder escalation

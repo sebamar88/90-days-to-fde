@@ -15,7 +15,7 @@ def test_extracts_synthetic_location_and_plumbing_category() -> None:
 
 def test_does_not_treat_smoke_detector_mention_as_emergency() -> None:
     result = RuleBasedProvider().extract(
-        IntakeRequest(request_id="syn-006", text="The smoke detector needs a battery replacement in Building 3.")
+        IntakeRequest(request_id="edge-smoke", text="Please replace the lobby smoke detector battery next week.")
     )
 
     assert result.urgency is Urgency.UNKNOWN
@@ -24,7 +24,7 @@ def test_does_not_treat_smoke_detector_mention_as_emergency() -> None:
 
 def test_ambiguous_category_remains_unknown() -> None:
     result = RuleBasedProvider().extract(
-        IntakeRequest(request_id="syn-007", text="Building 12 has a plumbing leak and an electrical outlet issue.")
+        IntakeRequest(request_id="edge-conflict", text="An active leak and a sparking outlet are both reported in Building 12.")
     )
 
     assert result.category is Category.UNKNOWN
@@ -33,7 +33,7 @@ def test_ambiguous_category_remains_unknown() -> None:
 
 def test_never_disables_human_review() -> None:
     result = RuleBasedProvider().extract(
-        IntakeRequest(request_id="syn-005", text="There is a problem near the back room again.")
+        IntakeRequest(request_id="edge-unknown", text="Something is wrong near the back room.")
     )
 
     assert result.review_required is True

@@ -2,7 +2,7 @@
 
 **Days:** 31–45
 
-**Status:** Lessons ready; use the Phase 2 service and synthetic fixtures.
+**Status:** Lesson drafts are public preview, unreviewed, and not validated with learners. Exercises use the Phase 2 service and synthetic fixtures.
 
 ## Phase outcome
 

@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-81
 day: 81
 phase: 6
-status: Ready
+locale: en
+slug: complete-telemetry-runbooks-and-fallback
 title: Complete telemetry, runbooks, and fallback
-estimated_effort: 90–120 minutes
+description: Software is not operationally complete if a reviewer cannot see what happened, contain a fault, and recover without guessing.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: capstone-milestone
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-80
+objectives:
+  - Verify trace/log correlation and sensitive-data redaction.
+  - Rehearse the documented fallback and stop action.
+  - Confirm recovery preserves approval and idempotency state.
+tags:
+  - phase-6
+  - operations-validation
+skills:
+  - operations-validation
 ---
 
 # Day 81 — Complete telemetry, runbooks, and fallback

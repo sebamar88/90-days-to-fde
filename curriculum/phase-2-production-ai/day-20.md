@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-20
 day: 20
 phase: 2
-status: Ready
+locale: en
+slug: return-schema-validated-suggestions
 title: Return schema-validated suggestions
-estimated_effort: 90–120 minutes
+description: JSON that parses can still contain missing keys, unsupported labels, or invalid business values.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-19
+objectives:
+  - Generate a schema from an application-owned model.
+  - Validate decoded output and distinguish schema errors from transport/refusal/incomplete outcomes.
+  - Keep business rules outside the generation schema where appropriate.
+tags:
+  - phase-2
+  - structured-output
+skills:
+  - structured-output
 ---
 
 # Day 20 — Return schema-validated suggestions

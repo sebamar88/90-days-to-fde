@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-51
 day: 51
 phase: 4
-status: Ready
+locale: en
+slug: set-service-level-indicators-and-objectives
 title: Set service-level indicators and objectives
-estimated_effort: 75–100 minutes
+description: Availability alone does not show whether the intake workflow is useful or safe.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-50
+objectives:
+  - Define service-level indicators with explicit event populations.
+  - Propose objectives and windows as hypotheses, not customer commitments.
+  - Separate availability, latency, task outcome, and safety indicators.
+tags:
+  - phase-4
+  - service-level-objectives
+skills:
+  - service-level-objectives
 ---
 
 # Day 51 — Set service-level indicators and objectives

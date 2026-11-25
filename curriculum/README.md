@@ -6,13 +6,13 @@ The days are a recommended sequence, not a daily time promise. Each day adds evi
 
 Do not assume AI is the answer. The learner must validate the workflow and compare a simple rules-based baseline before proposing a model. The capstone is a bounded, auditable request-intake assistant with human approval before work-order creation or routing changes.
 
-**Status:** Days 1–90 have lesson pages and assessments. Learner feedback and demand validation remain ongoing; simulated exercises are not real customer validation.
+**Status:** All 90 lesson pages are authored public previews. They are unreviewed and have not been validated with learners. Simulated exercises are not real customer validation. Automated checks validate metadata, structure, links, datasets, and reference-lab behavior; they do not prove every learner exercise is automatically assessed or that learning outcomes have been achieved.
 
 Each lesson links to its [phase lab and test suite](labs/README.md). The suites check executable behavior and artifact structure; human rubrics assess qualitative judgment.
 
 ## Phase 1 — Foundations & Business Discovery (Days 1–15)
 
-**Outcome:** a customer-backed problem brief, workflow map, success measures, constraints, solution options, architecture context, ADR, thin-slice plan, and playback.
+**Outcome:** a clearly labeled synthetic discovery packet with a problem brief, workflow hypothesis, candidate success measures, constraints, solution options, architecture context, ADR, thin-slice plan, and playback. This simulation is not customer validation.
 
 1. From request to business outcome
 2. Map the people around the problem
@@ -50,7 +50,7 @@ Each lesson links to its [phase lab and test suite](labs/README.md). The suites 
 
 ## Phase 5 — Enterprise Deployment & Delivery (Days 61–75)
 
-**Outcome:** a staged deployment and support plan, adoption measures, runbooks, training, and a customer-ready handoff.
+**Outcome:** a staged deployment and support plan, adoption measures, runbooks, training, and a handoff package for a simulated customer. Real customer readiness requires context-specific review.
 
 61. [Choose a deployment shape from constraints](phase-5-enterprise-delivery/day-61.md) · 62. [Separate configuration and secrets](phase-5-enterprise-delivery/day-62.md) · 63. [Prepare environments and repeatable setup](phase-5-enterprise-delivery/day-63.md) · 64. [Add a deployment pipeline](phase-5-enterprise-delivery/day-64.md) · 65. [Define rollback and release controls](phase-5-enterprise-delivery/day-65.md) · 66. [Estimate operating cost and capacity](phase-5-enterprise-delivery/day-66.md) · 67. [Write an operations runbook](phase-5-enterprise-delivery/day-67.md) · 68. [Set up support ownership and escalation](phase-5-enterprise-delivery/day-68.md) · 69. [Plan user training and change adoption](phase-5-enterprise-delivery/day-69.md) · 70. [Design feedback and correction loops](phase-5-enterprise-delivery/day-70.md) · 71. [Measure workflow impact after launch](phase-5-enterprise-delivery/day-71.md) · 72. [Conduct a launch readiness review](phase-5-enterprise-delivery/day-72.md) · 73. [Simulate a production incident](phase-5-enterprise-delivery/day-73.md) · 74. [Deliver the customer handoff](phase-5-enterprise-delivery/day-74.md) · 75. [Phase review: deployment and adoption packet](phase-5-enterprise-delivery/day-75.md)
 

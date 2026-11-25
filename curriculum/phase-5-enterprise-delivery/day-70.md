@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-70
 day: 70
 phase: 5
-status: Ready
+locale: en
+slug: design-feedback-and-correction-loops
 title: Design feedback and correction loops
-estimated_effort: 75–100 minutes
+description: Corrections can improve a service, but only if teams know what is collected, who reviews it, and whether it changes a rule, prompt, dataset, or policy.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-69
+objectives:
+  - Design a minimal, purpose-bound feedback record.
+  - Route corrections to review rather than automatic training.
+  - Close the loop with users and version changes.
+tags:
+  - phase-5
+  - feedback-governance
+skills:
+  - feedback-governance
 ---
 
 # Day 70 — Design feedback and correction loops

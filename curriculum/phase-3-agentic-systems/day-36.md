@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-36
 day: 36
 phase: 3
-status: Ready
+locale: en
+slug: model-workflow-state-and-resumability
 title: Model workflow state and resumability
-estimated_effort: 90–120 minutes
+description: Enterprise workflows outlive one process, request, or model call.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-35
+objectives:
+  - Define legal states and transitions for the intake workflow.
+  - Persist enough versioned state to resume safely.
+  - Reject stale or illegal transitions.
+tags:
+  - phase-3
+  - durable-state
+skills:
+  - durable-state
 ---
 
 # Day 36 — Model workflow state and resumability

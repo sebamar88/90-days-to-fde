@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-37
 day: 37
 phase: 3
-status: Ready
+locale: en
+slug: integrate-identity-and-authorization
 title: Integrate identity and authorization
-estimated_effort: 90–120 minutes
+description: An agent's natural-language claim is not an identity.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-36
+objectives:
+  - Separate authentication, authorization, and model-provided content.
+  - Apply least privilege to each role and tool.
+  - Test both allowed and denied access paths.
+tags:
+  - phase-3
+  - authorization
+skills:
+  - authorization
 ---
 
 # Day 37 — Integrate identity and authorization

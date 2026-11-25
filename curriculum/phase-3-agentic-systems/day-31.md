@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-31
 day: 31
 phase: 3
-status: Ready
+locale: en
+slug: distinguish-an-agent-from-a-workflow
 title: Distinguish an agent from a workflow
-estimated_effort: 75–100 minutes
+description: “Agentic” is not a reason to delegate control.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-30
+objectives:
+  - Compare a fixed workflow, a model-assisted workflow, and a model-directed tool loop.
+  - Identify which decisions require flexible language understanding and which should stay deterministic.
+  - Recommend a bounded design with a measurable reason.
+tags:
+  - phase-3
+  - autonomy-design
+skills:
+  - autonomy-design
 ---
 
 # Day 31 — Distinguish an agent from a workflow

@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-61
 day: 61
 phase: 5
-status: Ready
+locale: en
+slug: choose-a-deployment-shape-from-constraints
 title: Choose a deployment shape from constraints
-estimated_effort: 75–100 minutes
+description: Deployment architecture should follow customer constraints and operating capacity.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-60
+objectives:
+  - Compare local, managed-service, and customer-hosted options.
+  - Identify constraints that determine the choice.
+  - Document assumptions, operational burden, and a revisit trigger.
+tags:
+  - phase-5
+  - deployment-architecture
+skills:
+  - deployment-architecture
 ---
 
 # Day 61 — Choose a deployment shape from constraints

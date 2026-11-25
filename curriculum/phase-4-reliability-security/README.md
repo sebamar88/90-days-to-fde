@@ -2,7 +2,7 @@
 
 **Days:** 46–60
 
-**Status:** Lessons ready; all evidence remains synthetic or locally generated.
+**Status:** Lesson drafts are public preview, unreviewed, and not validated with learners. Exercises use synthetic or locally generated evidence.
 
 ## Phase outcome
 

@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-24
 day: 24
 phase: 2
-status: Ready
+locale: en
+slug: integrate-with-a-work-order-sandbox
 title: Integrate with a work-order sandbox
-estimated_effort: 90–120 minutes
+description: Enterprise integration is a contract and authorization problem as much as an HTTP problem.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-23
+objectives:
+  - Define a narrow work-order port and fake adapter.
+  - Keep suggestion creation separate from work-order creation.
+  - Validate mapping and error behavior at the integration boundary.
+tags:
+  - phase-2
+  - integration-boundaries
+skills:
+  - integration-boundaries
 ---
 
 # Day 24 — Integrate with a work-order sandbox

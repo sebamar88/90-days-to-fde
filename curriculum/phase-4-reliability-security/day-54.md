@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-54
 day: 54
 phase: 4
-status: Ready
+locale: en
+slug: defend-against-prompt-injection-and-unsafe-inputs
 title: Defend against prompt injection and unsafe inputs
-estimated_effort: 90–120 minutes
+description: Instructions can arrive inside user text or retrieved content.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-53
+objectives:
+  - Treat user and retrieved content as data, not trusted policy.
+  - Prevent untrusted text from changing identity, scope, or approval state.
+  - Test safe handling of injection-like content and refusal paths.
+tags:
+  - phase-4
+  - prompt-injection-defense
+skills:
+  - prompt-injection-defense
 ---
 
 # Day 54 — Defend against prompt injection and unsafe inputs

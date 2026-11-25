@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-48
 day: 48
 phase: 4
-status: Ready
+locale: en
+slug: analyze-errors-by-slice
 title: Analyze errors by slice
-estimated_effort: 90–120 minutes
+description: Aggregate scores can hide a systematic failure on a particular request type or workflow state.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-47
+objectives:
+  - Report metric results by meaningful slice and sample count.
+  - Inspect false accepts and false abstentions separately.
+  - Turn an observed error into a bounded follow-up test.
+tags:
+  - phase-4
+  - error-analysis
+skills:
+  - error-analysis
 ---
 
 # Day 48 — Analyze errors by slice

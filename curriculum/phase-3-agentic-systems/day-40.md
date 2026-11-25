@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-40
 day: 40
 phase: 3
-status: Ready
+locale: en
+slug: design-audit-events
 title: Design audit events
-estimated_effort: 75–100 minutes
+description: Operators need to reconstruct who requested, approved, and executed an action.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-39
+objectives:
+  - Define events for state transitions and external actions.
+  - Capture correlation, actor, policy result, and version references.
+  - Exclude secrets and unnecessary payloads.
+tags:
+  - phase-3
+  - auditability
+skills:
+  - auditability
 ---
 
 # Day 40 — Design audit events

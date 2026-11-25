@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-58
 day: 58
 phase: 4
-status: Ready
+locale: en
+slug: practice-incident-response
 title: Practice incident response
-estimated_effort: 90–120 minutes
+description: Teams need a rehearsed way to contain unsafe behavior, communicate clearly, preserve evidence, and recover.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-57
+objectives:
+  - Assign incident roles and containment authority.
+  - Preserve a minimal, privacy-conscious timeline.
+  - Define customer communication and recovery criteria.
+tags:
+  - phase-4
+  - incident-response
+skills:
+  - incident-response
 ---
 
 # Day 58 — Practice incident response

@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-26
 day: 26
 phase: 2
-status: Ready
+locale: en
+slug: version-prompts-and-schemas
 title: Version prompts and schemas
-estimated_effort: 75–100 minutes
+description: Prompt or schema edits change system behavior.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-25
+objectives:
+  - Store prompt text and schema versions as reviewable artifacts.
+  - Attach stable version identifiers to evaluation outputs.
+  - Prevent secrets and customer data from entering prompts or logs.
+tags:
+  - phase-2
+  - reproducible-evaluation
+skills:
+  - reproducible-evaluation
 ---
 
 # Day 26 — Version prompts and schemas

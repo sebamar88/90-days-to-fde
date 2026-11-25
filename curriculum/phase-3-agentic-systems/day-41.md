@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-41
 day: 41
 phase: 3
-status: Ready
+locale: en
+slug: prevent-duplicate-actions
 title: Prevent duplicate actions
-estimated_effort: 90–120 minutes
+description: Network timeouts make the caller uncertain whether a write succeeded.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-40
+objectives:
+  - Create a stable idempotency key from the approved operation identity.
+  - Return the prior result for an identical replay.
+  - Reject a replay whose payload differs under the same key.
+tags:
+  - phase-3
+  - idempotent-operations
+skills:
+  - idempotent-operations
 ---
 
 # Day 41 — Prevent duplicate actions

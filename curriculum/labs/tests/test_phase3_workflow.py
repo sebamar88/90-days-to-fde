@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import pytest
+import json
 
 from meridian_fde_labs.phase3 import (
     AccessDenied,
@@ -103,9 +104,76 @@ def test_cancelled_workflow_cannot_be_submitted(workflow: ToolWorkflow, coordina
 def test_snapshot_can_resume_without_losing_approval(workflow: ToolWorkflow, coordinator: Actor) -> None:
     preview = workflow.prepare("req-1", coordinator, "B12", {"category": "plumbing"})
     workflow.approve("req-1", coordinator, preview.preview_hash)
-    resumed = ToolWorkflow.restore(workflow.sites, workflow.snapshot())
+    snapshot = json.loads(json.dumps(workflow.snapshot()))
+    resumed = ToolWorkflow.restore(workflow.sites, snapshot)
 
     assert resumed.submit("req-1", coordinator, "op-1")["request_id"] == "req-1"
+
+
+def test_preview_fields_cannot_be_mutated_after_creation(workflow: ToolWorkflow, coordinator: Actor) -> None:
+    preview = workflow.prepare("req-immutable", coordinator, "B12", {"category": "plumbing"})
+
+    with pytest.raises(TypeError):
+        preview.fields["category"] = "electrical"
+
+    workflow.approve("req-immutable", coordinator, preview.preview_hash)
+    with pytest.raises(TypeError):
+        preview.fields["category"] = "electrical"
+
+
+def test_tampered_preview_snapshot_is_rejected(workflow: ToolWorkflow, coordinator: Actor) -> None:
+    preview = workflow.prepare("req-tampered", coordinator, "B12", {"category": "plumbing"})
+    snapshot = workflow.snapshot()
+    snapshot["previews"]["req-tampered"]["fields"]["category"] = "electrical"
+
+    with pytest.raises(ValueError, match="preview integrity"):
+        ToolWorkflow.restore(workflow.sites, snapshot)
+
+
+def test_cancelled_approval_cannot_be_reused_after_request_recreation(
+    workflow: ToolWorkflow, coordinator: Actor
+) -> None:
+    first = workflow.prepare("req-recreate", coordinator, "B12", {"category": "plumbing"})
+    workflow.approve("req-recreate", coordinator, first.preview_hash)
+    workflow.cancel("req-recreate", coordinator)
+    second = workflow.prepare("req-recreate", coordinator, "B12", {"category": "electrical"})
+
+    with pytest.raises(InvalidTransition, match="approval required"):
+        workflow.submit("req-recreate", coordinator, "op-recreated")
+
+    workflow.approve("req-recreate", coordinator, second.preview_hash)
+    assert workflow.submit("req-recreate", coordinator, "op-recreated")["request_id"] == "req-recreate"
+
+
+def test_snapshot_rejects_malformed_workflow_state(workflow: ToolWorkflow, coordinator: Actor) -> None:
+    workflow.prepare("req-invalid-state", coordinator, "B12", {"category": "plumbing"})
+    snapshot = workflow.snapshot()
+    snapshot["states"]["req-invalid-state"] = "approved_without_actor"
+
+    with pytest.raises(ValueError, match="snapshot state"):
+        ToolWorkflow.restore(workflow.sites, snapshot)
+
+
+def test_replay_requires_the_same_authorized_actor(workflow: ToolWorkflow, coordinator: Actor) -> None:
+    preview = workflow.prepare("req-replay-auth", coordinator, "B12", {"category": "plumbing"})
+    workflow.approve("req-replay-auth", coordinator, preview.preview_hash)
+    workflow.submit("req-replay-auth", coordinator, "op-replay-auth")
+
+    with pytest.raises(AccessDenied):
+        workflow.submit("req-replay-auth", Actor("coord-other", "coordinator", "north"), "op-replay-auth")
+
+
+def test_snapshot_cannot_relabel_a_submitted_request_as_cancelled(
+    workflow: ToolWorkflow, coordinator: Actor
+) -> None:
+    preview = workflow.prepare("req-tampered-state", coordinator, "B12", {"category": "plumbing"})
+    workflow.approve("req-tampered-state", coordinator, preview.preview_hash)
+    workflow.submit("req-tampered-state", coordinator, "op-tampered-state")
+    snapshot = workflow.snapshot()
+    snapshot["states"]["req-tampered-state"] = "cancelled"
+
+    with pytest.raises(ValueError, match="approval state|submission state"):
+        ToolWorkflow.restore(workflow.sites, snapshot)
 
 
 def test_retry_stops_after_the_declared_attempt_budget() -> None:

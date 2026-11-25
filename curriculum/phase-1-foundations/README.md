@@ -1,12 +1,13 @@
 # Phase 1 — Foundations & Business Discovery
 
 **Days:** 1–15
+**Status:** Lesson drafts are public preview, unreviewed, and not validated with learners. Meridian is a fictional scenario.
 
-**Scenario:** Meridian Facilities wants to reduce delay and rework in maintenance request intake. Their service desk receives inconsistent emails; staff interpret urgency and location, then enter work orders into a legacy system. Leadership has asked about AI, but the actual problem and acceptable automation boundary are not yet established.
+**Scenario:** Meridian Facilities is fictional and wants to explore delay and rework in maintenance request intake. The described email and work-order process is a synthetic exercise prompt, not customer evidence. Leadership has asked about AI, but the actual problem and acceptable automation boundary are not yet established.
 
 ## Phase objective
 
-Turn an ambiguous request into a customer-validated, measurable, technically bounded opportunity. No production implementation is required in this phase. Your job is to understand the work, expose uncertainty, and propose the smallest safe next step.
+Practice turning an ambiguous request into a measurable, technically bounded opportunity. No production implementation or real customer validation is provided in this phase. Your job is to understand the work, expose uncertainty, and propose the smallest safe next step.
 
 ## Cumulative packet
 

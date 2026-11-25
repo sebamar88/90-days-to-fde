@@ -15,7 +15,7 @@ The canonical source is plain Markdown in `curriculum/`, one page per day and a 
 | `docs/architecture/` | Repository and system design conventions |
 | `docs/quality/` | Editorial and technical acceptance standards |
 | `docs/brand/`, `docs/launch/` | Identity and audience validation plan |
-| `scripts/` | Dependency-free content checks |
+| `scripts/` | YAML parsing, JSON Schema curriculum checks, and metadata migration |
 | `.github/` | Issue/PR forms and CI |
 | `project-management/` | Human-readable milestone and issue manifests |
 | `site/` | Static public landing page |

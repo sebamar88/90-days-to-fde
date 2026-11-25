@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-55
 day: 55
 phase: 4
-status: Ready
+locale: en
+slug: minimize-and-protect-sensitive-data
 title: Minimize and protect sensitive data
-estimated_effort: 75–100 minutes
+description: Data minimization reduces exposure across prompts, logs, evaluation fixtures, and support workflows.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-54
+objectives:
+  - Map collection, processing, storage, and deletion for each data field.
+  - Define a minimal retention and access policy for the prototype.
+  - Detect accidental secrets or personal data in fixtures and telemetry.
+tags:
+  - phase-4
+  - privacy-engineering
+skills:
+  - privacy-engineering
 ---
 
 # Day 55 — Minimize and protect sensitive data

@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-52
 day: 52
 phase: 4
-status: Ready
+locale: en
+slug: design-timeouts-fallback-and-degradation
 title: Design timeouts, fallback, and degradation
-estimated_effort: 90–120 minutes
+description: Fallbacks preserve service only when they do not quietly weaken safety or misrepresent confidence.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-51
+objectives:
+  - Set end-to-end deadlines and per-dependency budgets.
+  - Define a degraded mode with explicit user messaging.
+  - Preserve approval and authorization controls in fallback paths.
+tags:
+  - phase-4
+  - degraded-mode
+skills:
+  - degraded-mode
 ---
 
 # Day 52 — Design timeouts, fallback, and degradation

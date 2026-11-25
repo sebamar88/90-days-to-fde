@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-25
 day: 25
 phase: 2
-status: Ready
+locale: en
+slug: bound-retries-and-make-writes-idempotent
 title: Bound retries and make writes idempotent
-estimated_effort: 75–100 minutes
+description: Retries can duplicate work or amplify an outage.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-24
+objectives:
+  - Define a stable idempotency key and duplicate behavior.
+  - Retry only bounded, retryable failures.
+  - Preserve ambiguous outcomes for lookup/reconciliation rather than blind replay.
+tags:
+  - phase-2
+  - idempotency-and-retry
+skills:
+  - idempotency-and-retry
 ---
 
 # Day 25 — Bound retries and make writes idempotent

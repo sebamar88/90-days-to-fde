@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-45
 day: 45
 phase: 3
-status: Ready
+locale: en
+slug: phase-review-bounded-integrated-workflow
 title: Phase review — bounded integrated workflow
-estimated_effort: 90–120 minutes
+description: An integrated workflow is ready for deeper reliability work only when its actions, identities, state, and failure behavior can be explained and replayed.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: phase-assessment
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-44
+objectives:
+  - Demonstrate the full path and its control boundaries.
+  - Defend the autonomy and integration choices with evidence.
+  - Identify remaining risks before evaluating and hardening the system.
+tags:
+  - phase-3
+  - architecture-defense
+skills:
+  - architecture-defense
 ---
 
 # Day 45 — Phase review: bounded integrated workflow

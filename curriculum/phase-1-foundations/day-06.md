@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-06
 day: 6
 phase: 1
-status: Ready
+locale: en
+slug: separate-evidence-from-assumptions
 title: Separate evidence from assumptions
-estimated_effort: 60–90 minutes
+description: Early discovery mixes observations, stakeholder beliefs, and engineering guesses.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 60
+  max: 90
+prerequisites:
+  - day-05
+objectives:
+  - Classify claims as observed, reported, inferred, or unknown.
+  - Identify assumptions that could change scope or safety.
+  - Choose the next cheapest evidence-gathering action.
+tags:
+  - phase-1
+  - evidence-analysis
+skills:
+  - evidence-analysis
 ---
 
 # Day 6 — Separate evidence from assumptions

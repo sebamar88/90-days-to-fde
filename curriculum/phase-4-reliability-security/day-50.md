@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-50
 day: 50
 phase: 4
-status: Ready
+locale: en
+slug: add-structured-logs-and-traces
 title: Add structured logs and traces
-estimated_effort: 90–120 minutes
+description: When a multi-step request fails, operators need to connect the API request, model call, tool call, approval, and sandbox result without collecting unnecessary content.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-49
+objectives:
+  - Define correlation and trace boundaries for one workflow.
+  - Record useful status and duration fields with bounded cardinality.
+  - Redact request content, secrets, and sensitive model output.
+tags:
+  - phase-4
+  - observability
+skills:
+  - observability
 ---
 
 # Day 50 — Add structured logs and traces

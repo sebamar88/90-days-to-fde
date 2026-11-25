@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-80
 day: 80
 phase: 6
-status: Ready
+locale: en
+slug: complete-evaluation-and-regression-evidence
 title: Complete evaluation and regression evidence
-estimated_effort: 90–120 minutes
+description: A final demo can be curated to hide known failure cases.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: capstone-milestone
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-79
+objectives:
+  - Re-run the frozen evaluation against the capstone commit.
+  - Report quality by slice and safety gate.
+  - Preserve enough run metadata to reproduce the result.
+tags:
+  - phase-6
+  - final-evaluation
+skills:
+  - final-evaluation
 ---
 
 # Day 80 — Complete evaluation and regression evidence

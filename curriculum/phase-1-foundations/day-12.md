@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-12
 day: 12
 phase: 1
-status: Ready
+locale: en
+slug: record-a-consequential-decision
 title: Record a consequential decision
-estimated_effort: 60–90 minutes
+description: Architecture decisions are easier to review when the context and alternatives are preserved.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: foundational
+duration:
+  min: 60
+  max: 90
+prerequisites:
+  - day-11
+objectives:
+  - Record context, decision, alternatives, and consequences.
+  - Separate reversible implementation choices from policy decisions.
+  - Name evidence that would trigger reconsideration.
+tags:
+  - phase-1
+  - architecture-decision
+skills:
+  - architecture-decision
 ---
 
 # Day 12 — Record a consequential decision

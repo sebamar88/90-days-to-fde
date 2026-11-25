@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-90
 day: 90
 phase: 6
-status: Ready
+locale: en
+slug: retrospective-and-continued-learning-plan
 title: Retrospective and continued learning plan
-estimated_effort: 90–120 minutes
+description: Finishing a learning path is a checkpoint, not proof of mastery.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: phase-assessment
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-89
+objectives:
+  - Evaluate the original goals against completed artifacts and assessments.
+  - Identify strengths, unresolved gaps, and assumptions that did not hold.
+  - Plan continued practice with measurable checkpoints.
+tags:
+  - phase-6
+  - professional-retrospective
+skills:
+  - professional-retrospective
 ---
 
 # Day 90 — Retrospective and continued learning plan

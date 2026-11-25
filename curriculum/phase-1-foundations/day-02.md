@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-02
 day: 2
 phase: 1
-status: Ready
+locale: en
+slug: map-the-people-around-the-problem
 title: Map the people around the problem
-estimated_effort: 60–90 minutes
+description: The person funding a project, the person doing the work, and the person accountable for risk may value different outcomes.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 60
+  max: 90
+prerequisites:
+  - day-01
+objectives:
+  - Identify users, decision makers, operators, and affected parties.
+  - Record each role's goals, constraints, and influence without assuming agreement.
+  - Plan who to involve in discovery.
+tags:
+  - phase-1
+  - stakeholder-mapping
+skills:
+  - stakeholder-mapping
 ---
 
 # Day 2 — Map the people around the problem

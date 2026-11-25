@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-14
 day: 14
 phase: 1
-status: Ready
+locale: en
+slug: play-the-plan-back-to-the-customer
 title: Play the plan back to the customer
-estimated_effort: 60–90 minutes
+description: A playback catches mismatched definitions of the problem, success, and acceptable risk before a team invests in implementation.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 60
+  max: 90
+prerequisites:
+  - day-13
+objectives:
+  - Summarize evidence, uncertainties, and proposed next step plainly.
+  - Separate stakeholder-confirmed statements from your recommendation.
+  - Ask for concrete corrections and decisions.
+tags:
+  - phase-1
+  - customer-playback
+skills:
+  - customer-playback
 ---
 
 # Day 14 — Play the plan back to the customer

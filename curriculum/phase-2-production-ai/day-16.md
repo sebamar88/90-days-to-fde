@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-16
 day: 16
 phase: 2
-status: Ready
+locale: en
+slug: set-up-the-service-and-contract
 title: Set up the service and contract
-estimated_effort: 75–100 minutes
+description: AI experiments become hard to compare when they have no stable interface or repeatable environment.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-15
+objectives:
+  - Create an isolated Python environment and reproducible project layout.
+  - Define request/response contracts independently of the model provider.
+  - Expose one local endpoint and test it without network access.
+tags:
+  - phase-2
+  - api-contracts
+skills:
+  - api-contracts
 ---
 
 # Day 16 — Set up the service and contract

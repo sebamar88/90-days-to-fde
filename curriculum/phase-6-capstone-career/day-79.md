@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-79
 day: 79
 phase: 6
-status: Ready
+locale: en
+slug: add-authorization-and-approval-boundaries
 title: Add authorization and approval boundaries
-estimated_effort: 90–120 minutes
+description: The happy path is incomplete until it proves that an unauthorized actor, changed preview, or untrusted instruction cannot cause an action.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: capstone-milestone
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-78
+objectives:
+  - Enforce trusted actor context at every action boundary.
+  - Bind approval to immutable preview content and target environment.
+  - Demonstrate that denied paths make no downstream call.
+tags:
+  - phase-6
+  - secure-authorization
+skills:
+  - secure-authorization
 ---
 
 # Day 79 — Add authorization and approval boundaries

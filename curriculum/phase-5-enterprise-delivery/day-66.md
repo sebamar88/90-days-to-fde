@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-66
 day: 66
 phase: 5
-status: Ready
+locale: en
+slug: estimate-operating-cost-and-capacity
 title: Estimate operating cost and capacity
-estimated_effort: 75–100 minutes
+description: Cost estimates should expose assumptions and uncertainty.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-65
+objectives:
+  - Build a transparent per-request and monthly cost model.
+  - Estimate throughput and dependency capacity from stated assumptions.
+  - Compare model-assisted and deterministic operating paths.
+tags:
+  - phase-5
+  - cost-capacity
+skills:
+  - cost-capacity
 ---
 
 # Day 66 — Estimate operating cost and capacity

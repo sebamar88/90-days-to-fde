@@ -1,0 +1,17 @@
+{
+  "name": "90-days-to-fde-curriculum-tools",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate:curriculum": "node scripts/validate-curriculum.mjs",
+    "test:curriculum": "node --test tests/*.test.mjs",
+    "check:curriculum": "npm run test:curriculum && npm run validate:curriculum"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "yaml": "^2.8.1"
+  }
+}

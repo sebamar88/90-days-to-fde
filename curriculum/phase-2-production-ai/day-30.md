@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-30
 day: 30
 phase: 2
-status: Ready
+locale: en
+slug: phase-review-production-ai-service
 title: Phase review — production AI service
-estimated_effort: 90–120 minutes
+description: This phase succeeds when you can justify the system's boundary and measured behavior, including when not to use a model.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: phase-assessment
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-29
+objectives:
+  - Demonstrate the workflow, error paths, and human review boundary.
+  - Compare rules and model behavior with honest limitations.
+  - Recommend whether to proceed, revise, or keep the deterministic baseline.
+tags:
+  - phase-2
+  - solution-communication
+skills:
+  - solution-communication
 ---
 
 # Day 30 — Phase review: production AI service

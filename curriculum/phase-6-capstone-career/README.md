@@ -2,11 +2,11 @@
 
 **Days:** 76–90
 
-**Status:** Lessons ready; capstone remains local and synthetic unless a learner's organization separately authorizes another environment.
+**Status:** Lesson drafts are public preview, unreviewed, and not validated with learners. The capstone remains local and synthetic unless a learner's organization separately authorizes another environment.
 
 ## Phase outcome
 
-Assemble a reproducible, bounded Meridian intake assistant and its evidence into a capstone that a technical reviewer and customer stakeholder can inspect. Demonstrate the normal path, denial paths, and recovery behavior. Then turn the work into an honest portfolio narrative that separates simulated work from customer-validated results.
+Assemble a reproducible, bounded Meridian intake assistant and its evidence into a capstone that a technical reviewer and simulated stakeholder can inspect. Demonstrate the normal path, denial paths, and recovery behavior. Then turn the work into an honest portfolio narrative that separates simulated work from customer-validated results.
 
 ## Capstone acceptance boundary
 

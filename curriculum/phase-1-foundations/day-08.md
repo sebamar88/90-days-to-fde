@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-08
 day: 8
 phase: 1
-status: Ready
+locale: en
+slug: find-data-access-and-policy-constraints
 title: Find data, access, and policy constraints
-estimated_effort: 75–100 minutes
+description: Data access, privacy rules, identity boundaries, and legacy integration constraints shape what can safely be built.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-07
+objectives:
+  - Inventory data categories, systems, owners, and access paths.
+  - Identify sensitive fields and retention questions.
+  - Turn unknown policies and integration details into discovery actions.
+tags:
+  - phase-1
+  - data-governance
+skills:
+  - data-governance
 ---
 
 # Day 8 — Find data, access, and policy constraints
