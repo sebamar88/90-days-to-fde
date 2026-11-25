@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 Community Discussions
+    url: https://github.com/sebamar88/90-days-to-fde/discussions
+    about: Ask questions, share ideas, and connect with the community.
+
+  - name: 🎓 Learning Support
+    url: https://github.com/sebamar88/90-days-to-fde/discussions
+    about: Get help with lessons, exercises, and technical challenges.
+
+  - name: 🔒 Security Vulnerabilities
+    url: https://github.com/sebamar88/90-days-to-fde/security
+    about: Review our security policy before reporting vulnerabilities.
