@@ -1,0 +1,98 @@
+repository: sebamar88/90-days-to-fde
+issues:
+  - title: Validate Phase 1 curriculum with experienced engineers
+    labels: [curriculum, research]
+    milestone: Phase 1 — Curriculum foundations
+    body: |
+      ## Goal
+      Ask 5–8 engineers who have shipped production software to review the first 15 days for relevance, workload, and missing FDE skills.
+
+      ## Acceptance criteria
+      - Feedback is gathered with consent and no confidential employer/customer material.
+      - Findings distinguish observed learner feedback from maintainer interpretation.
+      - At least three prioritized changes or explicit reasons to keep the current design are recorded.
+      - No personal interview notes are committed without permission.
+  - title: Define and review a shared capstone acceptance benchmark
+    labels: [curriculum, assessment]
+    milestone: Phase 1 — Curriculum foundations
+    body: |
+      ## Goal
+      Make capstone completion assessable across different implementations and providers.
+
+      ## Acceptance criteria
+      - Rubric covers customer understanding, correctness, evaluation, security, reliability, and communication.
+      - Criteria inspect artifacts and behavior rather than framework choice.
+      - At least one fail-safe or abstention case is required.
+      - Reviewers can apply the scoring guide consistently to a sample project.
+  - title: Add learner setup guide and synthetic Meridian request set
+    labels: [curriculum, data]
+    milestone: Phase 2 — Production AI Engineering
+    body: |
+      ## Goal
+      Give learners a reusable local project setup and rights-safe synthetic inputs.
+
+      ## Acceptance criteria
+      - Setup uses an explicitly supported toolchain and has a no-paid-service path.
+      - Dataset is synthetic, documented, and includes ambiguous and incomplete examples.
+      - Data license and regeneration method are documented.
+      - CI validates the dataset schema without exposing secrets.
+  - title: Define provider adapter contract and deterministic baseline
+    labels: [engineering, curriculum]
+    milestone: Phase 2 — Production AI Engineering
+    body: |
+      ## Goal
+      Compare a deterministic workflow with optional model-backed extraction through a stable interface.
+
+      ## Acceptance criteria
+      - Interface is documented independently of any vendor SDK.
+      - Local fake/stub implementation supports the core exercises.
+      - Baseline and model-assisted path share representative evaluation cases.
+      - Timeout, malformed output, abstention, and provider-unavailable behavior are covered.
+  - title: Add curriculum threat model and safe tool-use exercise
+    labels: [security, curriculum]
+    milestone: Phase 3 — Agentic Systems & Enterprise Integration
+    body: |
+      ## Goal
+      Teach bounded tool use with explicit authorization, validation, approval, and audit behavior.
+
+      ## Acceptance criteria
+      - Threat model includes prompt injection, confused deputy, replay/duplicates, and sensitive output.
+      - Read and write capabilities are separated.
+      - Human approval is required before simulated consequential writes.
+      - Exercise uses isolated synthetic systems and has failure-path assessment.
+  - title: Add evaluation and regression fixture for the capstone
+    labels: [assessment, reliability]
+    milestone: Phase 4 — Reliability, Evaluation & Security
+    body: |
+      ## Goal
+      Make quality changes measurable across versions and representative request types.
+
+      ## Acceptance criteria
+      - Evaluation cases cover routine, ambiguous, missing-field, and unsafe requests.
+      - Metrics distinguish extraction accuracy, abstention, and unsafe action.
+      - Threshold rationale and known limitations are documented.
+      - Evaluation does not require a paid model endpoint.
+  - title: Publish a reproducible deployment and operations exercise
+    labels: [curriculum, operations]
+    milestone: Phase 5 — Enterprise Deployment & Delivery
+    body: |
+      ## Goal
+      Teach a deployment shape chosen from customer constraints, with a rollback and support plan.
+
+      ## Acceptance criteria
+      - Learner compares at least two deployment constraints/options.
+      - Secrets and configuration are handled safely.
+      - Health, rollback, logging, and support ownership are specified.
+      - Instructions avoid requiring a specific paid cloud account.
+  - title: Run a public curriculum preview and learner feedback round
+    labels: [launch, research]
+    milestone: Launch validation
+    body: |
+      ## Goal
+      Share the free preview with a small audience and test whether the positioning and first lessons are useful.
+
+      ## Acceptance criteria
+      - Landing page clearly states target audience, free scope, and non-guaranteed outcomes.
+      - Feedback questions focus on learner value, friction, and intended next action.
+      - No tracking or collection of personal data is added without a clear need and disclosure.
+      - Findings and follow-up decisions are summarized publicly.

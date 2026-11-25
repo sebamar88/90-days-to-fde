@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">90 Days to FDE route mark</title>
+  <desc id="desc">A teal route line turns toward a terminal cursor inside a navy compass circle.</desc>
+  <circle cx="48" cy="48" r="42" fill="#102338"/>
+  <path d="M26 66V39c0-8 6-14 14-14h9" fill="none" stroke="#22C7B8" stroke-width="7" stroke-linecap="round"/>
+  <path d="m48 17 10 8-10 8" fill="none" stroke="#22C7B8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m39 49 10 9-10 9M53 68h17" fill="none" stroke="#F7F5EF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

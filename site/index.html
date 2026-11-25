@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A free, production-first open curriculum for experienced engineers moving into Forward Deployed and Applied AI Engineering.">
+  <meta name="theme-color" content="#102338">
+  <title>90 Days to FDE — Learn to deliver where software meets the customer</title>
+  <style>
+    :root { color-scheme: light; --navy:#102338; --paper:#f7f5ef; --teal:#087e76; --mint:#22c7b8; --ink:#14283a; --muted:#536575; --amber:#f4b942; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--ink); background:var(--paper); line-height:1.6; }
+    a { color:var(--teal); text-underline-offset:.2em; }
+    a:focus-visible { outline:3px solid var(--amber); outline-offset:3px; }
+    .wrap { width:min(1080px, calc(100% - 2rem)); margin:auto; }
+    header { background:var(--navy); color:var(--paper); padding:1rem 0; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+    .brand { display:flex; align-items:center; gap:.7rem; color:var(--paper); text-decoration:none; font-weight:750; }
+    .brand img { width:42px; height:42px; }
+    .nav a:not(.brand) { color:#d3f4ee; }
+    .hero { background:var(--navy); color:var(--paper); padding:clamp(3rem,9vw,7rem) 0 5rem; }
+    .eyebrow { color:var(--mint); text-transform:uppercase; letter-spacing:.12em; font-weight:750; font-size:.82rem; }
+    h1 { max-width:850px; font-size:clamp(2.5rem,7vw,5.25rem); line-height:1.02; letter-spacing:-.045em; margin:.75rem 0 1.25rem; }
+    .hero p { max-width:680px; color:#d6e1e7; font-size:1.15rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.8rem; }
+    .button { display:inline-block; padding:.78rem 1.1rem; border-radius:.4rem; background:var(--mint); color:var(--navy); text-decoration:none; font-weight:750; }
+    .button.secondary { border:1px solid #b9d4d8; background:transparent; color:var(--paper); }
+    .note { border-left:4px solid var(--amber); padding:.75rem 1rem; color:#e2e9eb!important; font-size:.95rem!important; }
+    main section { padding:3.5rem 0; }
+    h2 { font-size:clamp(1.7rem,4vw,2.5rem); line-height:1.15; margin:0 0 1rem; }
+    .intro { max-width:700px; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1rem; margin-top:1.5rem; }
+    .card { padding:1.2rem; border:1px solid #d6d9d2; border-radius:.6rem; background:#fffefa; }
+    .card h3 { margin:.1rem 0 .5rem; }
+    .number { color:var(--teal); font:700 .9rem ui-monospace,monospace; }
+    .start { background:#e6f2ef; }
+    footer { background:var(--navy); color:#d6e1e7; padding:2rem 0; }
+    footer a { color:#a7eee4; }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><img src="../assets/brand/mark.svg" alt=""><span>90 Days to FDE</span></a>
+      <a href="https://github.com/sebamar88/90-days-to-fde">Open source on GitHub ↗</a>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">A free, open learning path</div>
+        <h1>Learn to deliver where software meets the customer.</h1>
+        <p>Build the skills to turn ambiguous business problems into useful, secure, production-ready software — including applied AI when it earns its place.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/sebamar88/90-days-to-fde/blob/main/curriculum/phase-1-foundations/day-01.md">Start Day 1 ↗</a>
+          <a class="button secondary" href="https://github.com/sebamar88/90-days-to-fde/blob/main/curriculum/README.md">Explore all 90 days ↗</a>
+        </div>
+        <p class="note">For experienced software engineers. A guided sequence, not a job guarantee or fixed-hours bootcamp. No paid model or platform is required to start.</p>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>Production work is more than a demo.</h2>
+        <p class="intro">Practice the whole delivery loop: discover the workflow, define success, design around enterprise constraints, build and evaluate, then deploy and hand off responsibly.</p>
+        <div class="grid">
+          <article class="card"><div class="number">01 / DISCOVER</div><h3>Understand the work</h3><p>Interview stakeholders, map workflows, and separate evidence from assumptions.</p></article>
+          <article class="card"><div class="number">02 / BUILD</div><h3>Make it useful</h3><p>Develop bounded AI systems with baselines, human review, and provider-neutral interfaces.</p></article>
+          <article class="card"><div class="number">03 / PROVE</div><h3>Earn production trust</h3><p>Evaluate failure cases, manage security and reliability, and explain trade-offs.</p></article>
+          <article class="card"><div class="number">04 / DELIVER</div><h3>Support real adoption</h3><p>Plan deployment, operations, change, customer handoff, and portfolio evidence.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="start">
+      <div class="wrap">
+        <h2>Start with the customer, not the model.</h2>
+        <p class="intro">The first 15 lessons help you investigate a realistic facilities workflow and decide whether AI is warranted before writing production code.</p>
+        <div class="actions"><a class="button" href="https://github.com/sebamar88/90-days-to-fde/blob/main/curriculum/phase-1-foundations/day-01.md">Begin the first lesson ↗</a><a href="https://github.com/sebamar88/90-days-to-fde/blob/main/CONTRIBUTING.md">Contribute to the curriculum ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><p><strong>90 Days to FDE</strong> · Free-first, community-driven, and open source.</p><p>Code: MIT. Original learning content: CC BY-SA 4.0. <a href="https://github.com/sebamar88/90-days-to-fde">View the repository</a>.</p></div></footer>
+</body>
+</html>

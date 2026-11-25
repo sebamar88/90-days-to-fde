@@ -1,0 +1,17 @@
+repository: sebamar88/90-days-to-fde
+note: Draft milestone plan. GitHub connector in this environment supports issue operations but not milestone creation; create milestones from these definitions in the repository UI.
+milestones:
+  - title: Phase 1 — Curriculum foundations
+    description: Publish product foundations, repository governance, validation, and the first 15 lessons.
+  - title: Phase 2 — Production AI Engineering
+    description: Complete days 16–30 with provider-neutral implementations and evaluation evidence.
+  - title: Phase 3 — Agentic Systems & Enterprise Integration
+    description: Complete days 31–45 with bounded workflows and safe enterprise integrations.
+  - title: Phase 4 — Reliability, Evaluation & Security
+    description: Complete days 46–60 with reliability and security evidence.
+  - title: Phase 5 — Enterprise Deployment & Delivery
+    description: Complete days 61–75 with deployment and customer handoff practices.
+  - title: Phase 6 — Capstone & Career Readiness
+    description: Complete days 76–90 and publish capstone/career evidence.
+  - title: Launch validation
+    description: Publish launch assets and validate learner demand through interviews and feedback.
