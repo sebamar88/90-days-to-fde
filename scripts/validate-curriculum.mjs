@@ -59,8 +59,27 @@ function checkLessons() {
       }
     }
   }
-  for (let day = 1; day <= 30; day++) if (!days.has(day)) errors.push(`expected exactly one lesson for days 1–30; missing day ${day}`);
-  for (const day of days.keys()) if (day < 1 || day > 30) errors.push(`unexpected lesson day outside 1–30: ${day}`);
+  for (let day = 1; day <= 90; day++) if (!days.has(day)) errors.push(`expected exactly one lesson for days 1–90; missing day ${day}`);
+  for (const day of days.keys()) if (day < 1 || day > 90) errors.push(`unexpected lesson day outside 1–90: ${day}`);
+  for (const [day, file] of days) {
+    const expectedPhase = Math.ceil(day / 15);
+    if (Number(/[/\\]phase-(\d+)-/.exec(file)?.[1]) !== expectedPhase) {
+      errors.push(`${relative(file)}: day ${day} must belong to phase ${expectedPhase}`);
+    }
+  }
+}
+
+function checkPhaseOverviews() {
+  for (let phase = 1; phase <= 6; phase++) {
+    const directory = fs.readdirSync(curriculum, { withFileTypes: true })
+      .find((entry) => entry.isDirectory() && entry.name.startsWith(`phase-${phase}-`));
+    if (!directory) {
+      errors.push(`missing curriculum directory for phase ${phase}`);
+      continue;
+    }
+    const overview = path.join(curriculum, directory.name, 'README.md');
+    if (!fs.existsSync(overview)) errors.push(`${relative(overview)}: missing phase overview`);
+  }
 }
 
 function checkRoadmap() {
@@ -124,6 +143,7 @@ function checkMarkdownLinks() {
 }
 
 checkLessons();
+checkPhaseOverviews();
 checkRoadmap();
 checkSyntheticDataset();
 checkMarkdownLinks();
@@ -132,5 +152,5 @@ if (errors.length) {
   console.error(`Curriculum validation failed with ${errors.length} issue(s).`);
   process.exitCode = 1;
 } else {
-  console.log('Curriculum validation passed: 30 lessons, 90 roadmap days, local Markdown links.');
+  console.log('Curriculum validation passed: 90 lessons, six phase overviews, roadmap coverage, and local Markdown links.');
 }
