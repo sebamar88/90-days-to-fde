@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-27
 day: 27
 phase: 2
-status: Ready
+locale: en
+slug: measure-latency-and-cost
 title: Measure latency and cost
-estimated_effort: 75–100 minutes
+description: An accurate result may still be too slow or expensive for the workflow.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-26
+objectives:
+  - Measure end-to-end latency for representative cases.
+  - Record provider usage metadata when available without requiring it from all providers.
+  - Separate measured cost from assumptions and rate-card estimates.
+tags:
+  - phase-2
+  - cost-latency
+skills:
+  - cost-latency
 ---
 
 # Day 27 — Measure latency and cost

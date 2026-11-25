@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-44
 day: 44
 phase: 3
-status: Ready
+locale: en
+slug: run-a-failure-injection-exercise
 title: Run a failure-injection exercise
-estimated_effort: 90–120 minutes
+description: Failure paths should be observed before a customer depends on them.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-43
+objectives:
+  - Inject failures at declared boundaries and observe system behavior.
+  - Verify state, duplicate protection, and operator signals.
+  - Record unexpected behavior without hiding it.
+tags:
+  - phase-3
+  - failure-injection
+skills:
+  - failure-injection
 ---
 
 # Day 44 — Run a failure-injection exercise

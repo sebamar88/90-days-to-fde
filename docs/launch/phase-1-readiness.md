@@ -1,4 +1,4 @@
-# Phase 1 readiness and closure
+# Phase 1 repository deliverables and review readiness
 
 ## Curriculum and repository deliverables
 
@@ -15,9 +15,9 @@
 
 ## Release state
 
-Phase 1's repository and curriculum deliverables are complete. The first 15 lessons are ready, and the project can begin the next learning phase.
+The Phase 1 repository artifacts listed above have been authored. This checklist does not mean the first 15 lessons are pedagogically reviewed or ready to be described as a finished course. All 90 lessons, including Days 1–15, remain public previews marked unreviewed and not validated with learners. Day 1 is an expanded reference draft; its human editorial review is still outstanding.
 
-Learner feedback and demand validation are not marked complete: they require real learners. The preview and feedback loop remain ongoing launch work and should inform future revisions. Do not present synthetic role-play as external validation or claim employment outcomes.
+Learner feedback and demand validation require real learners and remain outstanding. Do not present synthetic role-play as external validation or claim employment outcomes.
 
 ## Evidence for the next review
 

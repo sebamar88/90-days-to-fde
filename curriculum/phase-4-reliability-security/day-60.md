@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-60
 day: 60
 phase: 4
-status: Ready
+locale: en
+slug: phase-review-evidence-backed-release-gate
 title: Phase review — evidence-backed release gate
-estimated_effort: 90–120 minutes
+description: Reliability and security work is a set of bounded claims supported by evidence.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: phase-assessment
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-59
+objectives:
+  - Present evaluation and operational evidence with limitations.
+  - Explain threat coverage, residual risk, and owners.
+  - Make a proceed, revise, or stop recommendation with conditions.
+tags:
+  - phase-4
+  - release-readiness
+skills:
+  - release-readiness
 ---
 
 # Day 60 — Phase review: evidence-backed release gate

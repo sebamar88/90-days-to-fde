@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-47
 day: 47
 phase: 4
-status: Ready
+locale: en
+slug: define-scoring-and-acceptance-thresholds
 title: Define scoring and acceptance thresholds
-estimated_effort: 75–100 minutes
+description: Metrics influence release decisions.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-46
+objectives:
+  - Choose metrics tied to task outcomes and risk.
+  - Define denominator, unit, and missing-data handling.
+  - Separate hard safety gates from aggregate quality thresholds.
+tags:
+  - phase-4
+  - metric-design
+skills:
+  - metric-design
 ---
 
 # Day 47 — Define scoring and acceptance thresholds

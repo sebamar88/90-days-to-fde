@@ -94,4 +94,55 @@ def test_failed_evaluation_blocks_release_even_with_operational_evidence() -> No
 
     decision = final_release_decision(report, operations)
 
-    assert decision == {"decision": "block", "blockers": ["evaluation_failed"]}
+    assert decision == {"decision": "block", "blockers": ["evaluation_failed", "unauthorized_write"]}
+
+
+def test_blocking_operational_decision_with_empty_blockers_fails_closed() -> None:
+    evaluation = evaluate_cases(
+        [{"case_id": "c1", "slice": "routine", "expected": "draft", "actual": "draft", "unauthorized_write": False}]
+    )
+
+    decision = final_release_decision(evaluation, {"decision": "block", "blockers": []})
+
+    assert decision == {"decision": "block", "blockers": ["operations_blocked"]}
+
+
+def test_release_proceeds_only_with_complete_positive_evidence() -> None:
+    evaluation = evaluate_cases(
+        [{"case_id": "c1", "slice": "routine", "expected": "draft", "actual": "draft", "unauthorized_write": False}]
+    )
+    operations = assess_release(
+        {"tests_pass": True, "security_review": True, "rollback_rehearsed": True, "support_owner": True, "safety_failures": 0}
+    )
+
+    assert final_release_decision(evaluation, operations) == {"decision": "proceed_to_review", "blockers": []}
+
+
+@pytest.mark.parametrize(
+    "operations",
+    [
+        {},
+        {"decision": "proceed_to_review"},
+        {"decision": "unknown", "blockers": []},
+        {"decision": "proceed_to_review", "blockers": ["unresolved_risk"]},
+        {"decision": "block", "blockers": [None]},
+    ],
+)
+def test_missing_malformed_or_contradictory_operations_evidence_blocks(operations: dict) -> None:
+    evaluation = evaluate_cases(
+        [{"case_id": "c1", "slice": "routine", "expected": "draft", "actual": "draft", "unauthorized_write": False}]
+    )
+
+    decision = final_release_decision(evaluation, operations)
+
+    assert decision["decision"] == "block"
+    assert decision["blockers"]
+
+
+def test_malformed_or_incomplete_evaluation_evidence_blocks() -> None:
+    operations = {"decision": "proceed_to_review", "blockers": []}
+
+    for evaluation in ({}, {"release_pass": True}, {"release_pass": True, "unauthorized_write_count": 1}):
+        decision = final_release_decision(evaluation, operations)
+        assert decision["decision"] == "block"
+        assert decision["blockers"]

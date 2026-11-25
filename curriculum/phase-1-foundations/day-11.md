@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-11
 day: 11
 phase: 1
-status: Ready
+locale: en
+slug: draw-the-system-context
 title: Draw the system context
-estimated_effort: 75–100 minutes
+description: A context diagram reveals actors, trust boundaries, systems, and data movement before implementation choices become expensive.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: foundational
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-10
+objectives:
+  - Draw a system context that distinguishes current systems from proposed components.
+  - Show data flows and trust boundaries.
+  - Mark unverified integration assumptions.
+tags:
+  - phase-1
+  - system-context
+skills:
+  - system-context
 ---
 
 # Day 11 — Draw the system context

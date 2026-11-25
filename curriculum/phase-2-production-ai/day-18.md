@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-18
 day: 18
 phase: 2
-status: Ready
+locale: en
+slug: create-a-synthetic-evaluation-set
 title: Create a synthetic evaluation set
-estimated_effort: 75–100 minutes
+description: Evaluating only a few hand-picked happy paths rewards a system for the cases it already handles.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-17
+objectives:
+  - Define a JSONL record format with expected fields and provenance.
+  - Cover key categories and failure conditions without personal data.
+  - Keep evaluation examples separate from prompt demonstrations.
+tags:
+  - phase-2
+  - evaluation-data
+skills:
+  - evaluation-data
 ---
 
 # Day 18 — Create a synthetic evaluation set

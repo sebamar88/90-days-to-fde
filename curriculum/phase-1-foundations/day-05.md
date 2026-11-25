@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-05
 day: 5
 phase: 1
-status: Ready
+locale: en
+slug: run-the-discovery-conversation
 title: Run the discovery conversation
-estimated_effort: 60–90 minutes
+description: Discovery is a listening and sense-making exercise.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 60
+  max: 90
+prerequisites:
+  - day-04
+objectives:
+  - Use follow-up questions to reconstruct a recent case.
+  - Notice when an answer is a generalization rather than a specific example.
+  - Avoid collecting personal or confidential data.
+tags:
+  - phase-1
+  - customer-interview
+skills:
+  - customer-interview
 ---
 
 # Day 5 — Run the discovery conversation

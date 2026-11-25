@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-63
 day: 63
 phase: 5
-status: Ready
+locale: en
+slug: prepare-environments-and-repeatable-setup
 title: Prepare environments and repeatable setup
-estimated_effort: 90–120 minutes
+description: “Works on my machine” is not an environment strategy.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-62
+objectives:
+  - Rebuild the service from a clean checkout.
+  - Identify environment-specific dependencies and data.
+  - Document setup and verification without hidden credentials.
+tags:
+  - phase-5
+  - reproducible-deployment
+skills:
+  - reproducible-deployment
 ---
 
 # Day 63 — Prepare environments and repeatable setup

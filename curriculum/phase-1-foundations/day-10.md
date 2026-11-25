@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-10
 day: 10
 phase: 1
-status: Ready
+locale: en
+slug: compare-solution-options-and-scope-the-first-release
 title: Compare solution options and scope the first release
-estimated_effort: 75–100 minutes
+description: An enterprise pilot must fit the problem, risk tolerance, and integration reality.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-09
+objectives:
+  - Compare options against explicit criteria.
+  - Select a reversible first release with a clear user boundary.
+  - State exclusions and decision gates.
+tags:
+  - phase-1
+  - project-scoping
+skills:
+  - project-scoping
 ---
 
 # Day 10 — Compare solution options and scope the first release

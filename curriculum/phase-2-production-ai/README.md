@@ -1,7 +1,7 @@
 # Phase 2 — Production AI Engineering
 
 **Days:** 16–30
-**Status:** Lessons ready; reference starter provided. Provider-backed model calls are optional.
+**Status:** Lesson drafts are public preview, unreviewed, and not validated with learners. A local reference starter is provided; provider-backed model calls are optional.
 
 ## Phase outcome
 

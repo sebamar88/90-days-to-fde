@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-78
 day: 78
 phase: 6
-status: Ready
+locale: en
+slug: implement-the-end-to-end-happy-path
 title: Implement the end-to-end happy path
-estimated_effort: 120–150 minutes
+description: A narrow vertical slice proves that contracts, orchestration, and user-visible behavior work together.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: capstone-milestone
+difficulty: advanced
+duration:
+  min: 120
+  max: 150
+prerequisites:
+  - day-77
+objectives:
+  - Connect the Phase 2 service to the bounded Phase 3 workflow.
+  - Keep provider choice behind the existing application boundary.
+  - Demonstrate a complete draft without production writes.
+tags:
+  - phase-6
+  - integration-engineering
+skills:
+  - integration-engineering
 ---
 
 # Day 78 — Implement the end-to-end happy path

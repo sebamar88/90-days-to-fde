@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-73
 day: 73
 phase: 5
-status: Ready
+locale: en
+slug: simulate-a-production-incident
 title: Simulate a production incident
-estimated_effort: 90–120 minutes
+description: Production readiness includes coordinated response under pressure.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-72
+objectives:
+  - Detect and contain degraded or unsafe behavior.
+  - Coordinate technical and customer-facing roles.
+  - Define recovery evidence and a transparent incident update.
+tags:
+  - phase-5
+  - incident-response
+skills:
+  - incident-response
 ---
 
 # Day 73 — Simulate a production incident

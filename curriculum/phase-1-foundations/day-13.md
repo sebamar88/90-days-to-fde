@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-13
 day: 13
 phase: 1
-status: Ready
+locale: en
+slug: design-the-smallest-useful-slice
 title: Design the smallest useful slice
-estimated_effort: 75–100 minutes
+description: Small slices shorten the path to evidence.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: foundational
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-12
+objectives:
+  - Define one end-to-end user journey and its boundaries.
+  - Write acceptance criteria including ambiguous and failure cases.
+  - Identify dependencies and test data needed.
+tags:
+  - phase-1
+  - acceptance-criteria
+skills:
+  - acceptance-criteria
 ---
 
 # Day 13 — Design the smallest useful slice

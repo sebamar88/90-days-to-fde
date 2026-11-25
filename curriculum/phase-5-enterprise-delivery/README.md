@@ -2,7 +2,7 @@
 
 **Days:** 61–75
 
-**Status:** Lessons ready; deployment remains a local or simulated exercise.
+**Status:** Lesson drafts are public preview, unreviewed, and not validated with learners. Deployment remains local or simulated.
 
 ## Phase outcome
 

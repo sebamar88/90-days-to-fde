@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-59
 day: 59
 phase: 4
-status: Ready
+locale: en
+slug: run-a-reliability-and-security-review
 title: Run a reliability and security review
-estimated_effort: 90–120 minutes
+description: A review is actionable when it connects system behavior to evidence, owners, and release conditions.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-58
+objectives:
+  - Trace high risks to controls and tests.
+  - Review degraded behavior, telemetry, and recovery ownership.
+  - Separate blockers from accepted residual risks.
+tags:
+  - phase-4
+  - risk-review
+skills:
+  - risk-review
 ---
 
 # Day 59 — Run a reliability and security review

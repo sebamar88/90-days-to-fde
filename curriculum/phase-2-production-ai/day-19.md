@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-19
 day: 19
 phase: 2
-status: Ready
+locale: en
+slug: define-a-provider-adapter
 title: Define a provider adapter
-estimated_effort: 75–100 minutes
+description: Provider independence comes from a narrow application-owned contract, not from a universal SDK that hides every difference.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-18
+objectives:
+  - Define a typed provider protocol around the task, not a vendor API.
+  - Inject the provider into the service.
+  - Normalize provider errors without erasing useful failure categories.
+tags:
+  - phase-2
+  - provider-abstraction
+skills:
+  - provider-abstraction
 ---
 
 # Day 19 — Define a provider adapter

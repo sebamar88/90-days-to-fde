@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-43
 day: 43
 phase: 3
-status: Ready
+locale: en
+slug: evaluate-tool-selection-and-policy-adherence
 title: Evaluate tool selection and policy adherence
-estimated_effort: 90–120 minutes
+description: Task success alone hides unsafe tool choices.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-42
+objectives:
+  - Create cases that measure tool choice, argument quality, and policy adherence.
+  - Separate task completion from safety-critical errors.
+  - Compare the deterministic planner with an optional model planner.
+tags:
+  - phase-3
+  - tool-evaluation
+skills:
+  - tool-evaluation
 ---
 
 # Day 43 — Evaluate tool selection and policy adherence

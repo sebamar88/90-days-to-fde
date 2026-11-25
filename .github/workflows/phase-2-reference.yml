@@ -25,7 +25,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install starter and assessment dependencies
-        run: python -m pip install -e ".[test]"
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
+        with:
+          enable-cache: true
+      - name: Install locked starter and assessment dependencies
+        run: uv sync --locked --extra test
       - name: Run starter assessments
-        run: python -m pytest
+        run: uv run --locked pytest

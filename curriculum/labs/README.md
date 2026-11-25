@@ -4,17 +4,14 @@ These labs provide a runnable reference implementation and automated checks for 
 
 ## Run the complete suite
 
-Requires Python 3.12 or newer. From this directory:
+Requires Python 3.12 or newer and [uv](https://docs.astral.sh/uv/). From this directory:
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -e "../phase-2-production-ai/starter[test]"
-python -m pip install -e ".[test]"
-python -m pytest tests "../phase-2-production-ai/starter/tests"
+uv sync --locked --extra test
+uv run --locked pytest tests
 ```
 
-On macOS/Linux, activate with `source .venv/bin/activate`; the install and pytest commands are otherwise the same. The suite uses synthetic fixtures and local fakes. It does not require a cloud account, model API key, or external service.
+The shared lab lockfile includes the Phase 2 starter as a local path dependency so imports are consistent without running its tests twice. Run the Phase 2 starter suite separately from `curriculum/phase-2-production-ai/starter/` with `uv sync --locked --extra test && uv run --locked pytest`. Both suites use synthetic fixtures and local fakes; neither needs a cloud account, model API key, or external service.
 
 ## Phase-to-test map
 
@@ -29,6 +26,6 @@ On macOS/Linux, activate with `source .venv/bin/activate`; the install and pytes
 
 ## Assessment boundary
 
-Tests verify contracts, state transitions, safety properties, calculations, and reproducibility. Phase 1 tests can confirm that artifacts distinguish observed, simulated, assumed, synthetic, and unknown evidence; they cannot decide whether discovery was insightful. Human rubrics still assess judgment, communication, trade-offs, and the quality of learner-authored artifacts. Never label a simulated role-play as real customer validation.
+Tests verify contracts, state transitions, safety properties, calculations, and reproducibility. Snapshot restoration checks internal consistency and preview hashes; it is not authenticated durable storage and does not protect against an attacker who can rewrite the entire snapshot and recompute hashes. Phase 1 tests can confirm that artifacts distinguish observed, simulated, assumed, synthetic, and unknown evidence; they cannot decide whether discovery was insightful. Human rubrics still assess judgment, communication, trade-offs, and the quality of learner-authored artifacts. Never label a simulated role-play as real customer validation.
 
 The included modules are reference solutions for study and local execution. Learners should make changes in a branch or copy, add their own cases, and rerun the relevant phase suite. Every phase overview and daily lesson links back to its test instructions.

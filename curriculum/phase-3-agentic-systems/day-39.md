@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-39
 day: 39
 phase: 3
-status: Ready
+locale: en
+slug: handle-rate-limits-and-partial-failure
 title: Handle rate limits and partial failure
-estimated_effort: 90–120 minutes
+description: Enterprise dependencies fail independently.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-38
+objectives:
+  - Distinguish retryable, terminal, and ambiguous outcomes.
+  - Respect server retry guidance and bound attempts and total time.
+  - Route ambiguous writes to reconciliation rather than blind retry.
+tags:
+  - phase-3
+  - partial-failure-recovery
+skills:
+  - partial-failure-recovery
 ---
 
 # Day 39 — Handle rate limits and partial failure

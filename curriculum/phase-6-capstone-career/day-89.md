@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-89
 day: 89
 phase: 6
-status: Ready
+locale: en
+slug: build-a-role-specific-evidence-map
 title: Build a role-specific evidence map
-estimated_effort: 60–90 minutes
+description: Role titles vary across companies.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: capstone-milestone
+difficulty: advanced
+duration:
+  min: 60
+  max: 90
+prerequisites:
+  - day-88
+objectives:
+  - Extract responsibilities and evidence expectations from a target role.
+  - Map each claim to a specific artifact or demo.
+  - Identify gaps that need future practice rather than inflated wording.
+tags:
+  - phase-6
+  - career-readiness
+skills:
+  - career-readiness
 ---
 
 # Day 89 — Build a role-specific evidence map

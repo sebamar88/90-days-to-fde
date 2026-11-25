@@ -4,16 +4,12 @@ This starter backs Phase 2. It runs locally with a deterministic provider and sy
 
 ## Quickstart
 
-Requires Python 3.12 or newer.
+Requires Python 3.12 or newer and [uv](https://docs.astral.sh/uv/).
 
 ```bash
-python -m venv .venv
-# macOS/Linux
-source .venv/bin/activate
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install -e ".[test]"
-pytest
-uvicorn meridian_intake.app:app --reload
+uv sync --locked --extra test
+uv run --locked pytest
+uv run --locked uvicorn meridian_intake.app:app --reload
 ```
 
 Send a synthetic request to `POST http://127.0.0.1:8000/v1/intake/suggestions`:
@@ -31,3 +27,7 @@ Every returned suggestion requires human review. The local fake work-order inter
 - `tests/` — automated checks for the starter contract and baseline
 
 The fixture labels are assessment examples, not claims about real maintenance requests or expected customer prevalence.
+
+The `uv.lock` file pins the resolved Python environment. Keep it synchronized with `pyproject.toml` and run `uv lock --check` before submitting. The evaluation set separates four development cases from four holdout cases. Holdout examples are public teaching data, not secret benchmark data; do not iteratively tune against them and claim independent generalization. The set is too small and synthetic to support real-world performance claims.
+
+API tests include invalid input rejected before provider invocation, provider timeout/unavailability, and malformed provider output. The endpoint translates provider contract failures into bounded HTTP errors without exposing raw provider error payloads.

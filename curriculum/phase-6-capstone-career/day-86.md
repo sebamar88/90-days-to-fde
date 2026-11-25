@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-86
 day: 86
 phase: 6
-status: Ready
+locale: en
+slug: prepare-a-live-demo-with-failure-paths
 title: Prepare a live demo with failure paths
-estimated_effort: 90–120 minutes
+description: A credible demo shows how a system handles uncertainty and failure, not only its best response.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-85
+objectives:
+  - Tell a clear customer-outcome story in a bounded time.
+  - Demonstrate success, denial, and recovery paths.
+  - Prepare a safe fallback if the demo environment fails.
+tags:
+  - phase-6
+  - technical-demonstration
+skills:
+  - technical-demonstration
 ---
 
 # Day 86 — Prepare a live demo with failure paths

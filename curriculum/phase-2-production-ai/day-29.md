@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-29
 day: 29
 phase: 2
-status: Ready
+locale: en
+slug: package-a-repeatable-local-demo
 title: Package a repeatable local demo
-estimated_effort: 75–100 minutes
+description: A demo should work for a reviewer from a clean checkout and make its environment, data, and limitations clear.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-28
+objectives:
+  - Document a fresh setup and one-command test/demo path.
+  - Make provider and model selection explicit.
+  - Include a failure and abstention demonstration, not just the happy path.
+tags:
+  - phase-2
+  - reproducible-development
+skills:
+  - reproducible-development
 ---
 
 # Day 29 — Package a repeatable local demo

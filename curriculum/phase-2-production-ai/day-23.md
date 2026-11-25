@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-23
 day: 23
 phase: 2
-status: Ready
+locale: en
+slug: ground-suggestions-in-approved-knowledge
 title: Ground suggestions in approved knowledge
-estimated_effort: 75–100 minutes
+description: When a response depends on a policy or reference source, the user needs to see what source supported it.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-22
+objectives:
+  - Attach source IDs and snippets from retrieved records, not model-authored URLs.
+  - Separate direct extraction from reference-backed inference.
+  - Return a clear no-evidence result.
+tags:
+  - phase-2
+  - grounding
+skills:
+  - grounding
 ---
 
 # Day 23 — Ground suggestions in approved knowledge

@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-57
 day: 57
 phase: 4
-status: Ready
+locale: en
+slug: test-authorization-boundaries
 title: Test authorization boundaries
-estimated_effort: 90–120 minutes
+description: Happy-path tests prove a permitted user can act.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-56
+objectives:
+  - Build a role/resource/state access matrix.
+  - Test deny paths at every read and write boundary.
+  - Detect authorization gaps caused by stale or changed resource state.
+tags:
+  - phase-4
+  - access-control
+skills:
+  - access-control
 ---
 
 # Day 57 — Test authorization boundaries

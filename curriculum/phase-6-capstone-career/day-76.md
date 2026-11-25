@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-76
 day: 76
 phase: 6
-status: Ready
+locale: en
+slug: confirm-capstone-scope-and-evidence-gaps
 title: Confirm capstone scope and evidence gaps
-estimated_effort: 75–100 minutes
+description: Capstones become unfinishable when scope grows faster than evidence.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: capstone-milestone
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-75
+objectives:
+  - Restate the outcome, non-goals, and measurable success criteria.
+  - Separate verified artifacts from simulated assumptions.
+  - Reduce scope to a demonstrable, safe end-to-end slice.
+tags:
+  - phase-6
+  - capstone-scoping
+skills:
+  - capstone-scoping
 ---
 
 # Day 76 — Confirm capstone scope and evidence gaps

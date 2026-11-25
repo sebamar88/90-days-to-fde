@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-09
 day: 9
 phase: 1
-status: Ready
+locale: en
+slug: test-whether-ai-belongs-in-the-solution
 title: Test whether AI belongs in the solution
-estimated_effort: 75–100 minutes
+description: AI can help interpret variable language, but adds uncertainty, evaluation burden, cost, and new failure modes.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-08
+objectives:
+  - Match problem characteristics to deterministic, human, and model-based approaches.
+  - Define where model uncertainty must be visible.
+  - Identify a baseline that can test whether AI adds value.
+tags:
+  - phase-1
+  - ai-fit-assessment
+skills:
+  - ai-fit-assessment
 ---
 
 # Day 9 — Test whether AI belongs in the solution

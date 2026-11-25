@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-03
 day: 3
 phase: 1
-status: Ready
+locale: en
+slug: see-the-work-as-it-happens
 title: See the work as it happens
-estimated_effort: 75–100 minutes
+description: Process descriptions often omit handoffs, workarounds, queues, and exceptions.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-02
+objectives:
+  - Model a current-state workflow with actors, decisions, and handoffs.
+  - Mark delays, rework, exceptions, and missing evidence.
+  - Avoid drawing the desired future state as if it were current.
+tags:
+  - phase-1
+  - process-mapping
+skills:
+  - process-mapping
 ---
 
 # Day 3 — See the work as it happens

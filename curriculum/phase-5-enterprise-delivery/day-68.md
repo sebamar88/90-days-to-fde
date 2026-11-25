@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-68
 day: 68
 phase: 5
-status: Ready
+locale: en
+slug: set-up-support-ownership-and-escalation
 title: Set up support ownership and escalation
-estimated_effort: 60–90 minutes
+description: Enterprise delivery crosses product, platform, security, and operations teams.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: enterprise-simulation
+difficulty: advanced
+duration:
+  min: 60
+  max: 90
+prerequisites:
+  - day-67
+objectives:
+  - Assign ownership for service, data, policy, and dependency incidents.
+  - Define severity, escalation triggers, and response expectations as proposals.
+  - Identify gaps that require customer agreement.
+tags:
+  - phase-5
+  - service-ownership
+skills:
+  - service-ownership
 ---
 
 # Day 68 — Set up support ownership and escalation

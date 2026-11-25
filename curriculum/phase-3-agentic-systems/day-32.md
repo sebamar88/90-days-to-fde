@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-32
 day: 32
 phase: 3
-status: Ready
+locale: en
+slug: define-tool-permissions-and-contracts
 title: Define tool permissions and contracts
-estimated_effort: 75–100 minutes
+description: A tool description is part of the system's control surface.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-31
+objectives:
+  - Define a narrow contract for each permitted operation.
+  - Separate read-only lookup from draft creation and production writes.
+  - Document authorization, data scope, limits, and failure behavior per tool.
+tags:
+  - phase-3
+  - tool-contracts
+skills:
+  - tool-contracts
 ---
 
 # Day 32 — Define tool permissions and contracts

@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-28
 day: 28
 phase: 2
-status: Ready
+locale: en
+slug: compare-model-and-rules-baselines
 title: Compare model and rules baselines
-estimated_effort: 90–120 minutes
+description: Overall accuracy can hide a critical failure slice.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-27
+objectives:
+  - Evaluate both systems on identical labeled cases.
+  - Report per-field and per-slice results, including abstentions.
+  - Use an error review to decide whether a model adds enough value.
+tags:
+  - phase-2
+  - model-evaluation
+skills:
+  - model-evaluation
 ---
 
 # Day 28 — Compare model and rules baselines

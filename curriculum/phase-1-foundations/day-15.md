@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-15
 day: 15
 phase: 1
-status: Ready
+locale: en
+slug: phase-review-discovery-packet-and-next-step-gate
 title: Phase review — discovery packet and next-step gate
-estimated_effort: 90–120 minutes
+description: The first two weeks are successful when the team has better evidence and a safer decision, not when it has committed to an AI build.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: phase-assessment
+difficulty: foundational
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-14
+objectives:
+  - Present the problem, evidence, metric, constraints, options, decision, and thin slice as one coherent story.
+  - Identify unresolved risks and accountable owners.
+  - Make a justified proceed, revise, or stop recommendation.
+tags:
+  - phase-1
+  - discovery-synthesis
+skills:
+  - discovery-synthesis
 ---
 
 # Day 15 — Phase review: discovery packet and next-step gate

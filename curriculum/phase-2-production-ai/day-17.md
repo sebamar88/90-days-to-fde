@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-17
 day: 17
 phase: 2
-status: Ready
+locale: en
+slug: build-a-deterministic-baseline
 title: Build a deterministic baseline
-estimated_effort: 75–100 minutes
+description: A model's output has no useful comparison point until the team measures a simpler approach.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-16
+objectives:
+  - Implement a small rules-based extractor with explicit limitations.
+  - Keep unknown values unknown rather than guessing.
+  - Test representative positives, negatives, and boundary cases.
+tags:
+  - phase-2
+  - deterministic-classification
+skills:
+  - deterministic-classification
 ---
 
 # Day 17 — Build a deterministic baseline

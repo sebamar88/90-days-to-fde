@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-35
 day: 35
 phase: 3
-status: Ready
+locale: en
+slug: add-human-approval-before-writes
 title: Add human approval before writes
-estimated_effort: 90–120 minutes
+description: Human review is meaningful only when the person sees the exact action, understands its impact, and approves the exact version that will execute.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-34
+objectives:
+  - Bind an approval to an immutable preview and actor.
+  - Invalidate approval when reviewed fields change or the request expires.
+  - Keep the model unable to approve on a person's behalf.
+tags:
+  - phase-3
+  - human-approval
+skills:
+  - human-approval
 ---
 
 # Day 35 — Add human approval before writes

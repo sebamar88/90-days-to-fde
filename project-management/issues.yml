@@ -1,5 +1,57 @@
 repository: sebamar88/90-days-to-fde
 issues:
+  - title: Peer-review the Day 1 reference lesson with experienced engineers
+    labels: [curriculum, review]
+    milestone: Phase 1 — Curriculum foundations
+    priority: P0
+    body: |
+      ## Goal
+      Review the expanded Day 1 lesson for clarity, evidence discipline, usefulness to experienced engineers, time estimate, and rubric consistency before changing its publication status.
+
+      ## Acceptance criteria
+      - At least two reviewers other than the author use `docs/quality/lesson-quality-standard.md`.
+      - Reviewers identify unsupported claims, confusing steps, and rubric disagreements with exact lesson sections.
+      - Revisions and unresolved disagreements are recorded.
+      - `review_status` stays `unreviewed` until the review is complete; no learner validation is inferred.
+  - title: Review Days 2–15 against the lesson quality standard
+    labels: [curriculum, review]
+    milestone: Phase 1 — Curriculum foundations
+    priority: P1
+    body: |
+      ## Goal
+      Bring the rest of Phase 1 from concise activity prompts to self-contained lessons without mechanically expanding every page.
+
+      ## Acceptance criteria
+      - Each lesson has an observable outcome, a teaching explanation/example where needed, actionable steps, assessable artifact, and evidence-based rubric.
+      - Fictional Meridian details remain labeled as synthetic and are not represented as customer research.
+      - Technical and research claims link to authoritative sources where appropriate.
+      - Lessons remain preview/unreviewed until independent review is documented.
+  - title: Review lesson quality across Phases 2–6 in phase-sized batches
+    labels: [curriculum, review]
+    milestone: Phase 2 — Production AI Engineering
+    priority: P1
+    body: |
+      ## Goal
+      Apply the lesson quality standard to Days 16–90 one phase at a time, prioritizing lessons with runnable implementation or safety-sensitive outcomes.
+
+      ## Acceptance criteria
+      - Each phase batch includes a code-to-lesson consistency review and primary-source check.
+      - Exercises have checkpoints, expected evidence, and recovery guidance.
+      - Model/provider failure, authorization, privacy, and human-review boundaries are explicit where relevant.
+      - No lesson is marked learner-validated without documented learner feedback.
+  - title: Validate a public curriculum preview with volunteer learners
+    labels: [launch, research]
+    milestone: Launch validation
+    priority: P1
+    body: |
+      ## Goal
+      Observe consenting experienced engineers attempt selected lessons using synthetic data and collect actionable usability/learning feedback.
+
+      ## Acceptance criteria
+      - Participants know the exercise is synthetic and can decline note-taking.
+      - Record completion time, confusing instructions, assessment disagreements, and accessibility/setup friction without confidential work data.
+      - Summarize cohort, method, limitations, changes, and unresolved risks.
+      - Update learner-validation metadata only for lessons actually tested and documented.
   - title: Validate Phase 1 curriculum with experienced engineers
     labels: [curriculum, research]
     milestone: Phase 1 — Curriculum foundations

@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-82
 day: 82
 phase: 6
-status: Ready
+locale: en
+slug: deploy-or-document-a-reproducible-deployment
 title: Deploy or document a reproducible deployment
-estimated_effort: 90–120 minutes
+description: Deployment practice should be proportional to the learning objective and environment access.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: capstone-milestone
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-81
+objectives:
+  - Reproduce the service from a clean environment.
+  - Verify configuration and health behavior without exposing secrets.
+  - Document the deployment boundary and missing production prerequisites.
+tags:
+  - phase-6
+  - deployment-reproducibility
+skills:
+  - deployment-reproducibility
 ---
 
 # Day 82 — Deploy or document a reproducible deployment

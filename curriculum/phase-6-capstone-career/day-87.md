@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-87
 day: 87
 phase: 6
-status: Ready
+locale: en
+slug: publish-a-privacy-safe-portfolio-case-study
 title: Publish a privacy-safe portfolio case study
-estimated_effort: 75–100 minutes
+description: A portfolio should make engineering judgment visible without disclosing customer information or implying outcomes that were never measured.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: capstone-milestone
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-86
+objectives:
+  - Explain the problem, constraints, decisions, and evidence.
+  - Remove secrets, personal data, and unapproved stakeholder content.
+  - State what the project does not prove.
+tags:
+  - phase-6
+  - portfolio-evidence
+skills:
+  - portfolio-evidence
 ---
 
 # Day 87 — Publish a privacy-safe portfolio case study

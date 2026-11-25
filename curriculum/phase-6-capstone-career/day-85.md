@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-85
 day: 85
 phase: 6
-status: Ready
+locale: en
+slug: write-a-concise-architecture-and-trade-off-brief
 title: Write a concise architecture and trade-off brief
-estimated_effort: 75–100 minutes
+description: FDEs must explain system behavior to both builders and decision-makers.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-84
+objectives:
+  - Explain the system context and primary sequence concisely.
+  - Defend two consequential decisions and rejected alternatives.
+  - Distinguish evidence from assumptions and future work.
+tags:
+  - phase-6
+  - architecture-communication
+skills:
+  - architecture-communication
 ---
 
 # Day 85 — Write a concise architecture and trade-off brief

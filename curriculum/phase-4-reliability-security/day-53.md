@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-53
 day: 53
 phase: 4
-status: Ready
+locale: en
+slug: threat-model-the-workflow
 title: Threat-model the workflow
-estimated_effort: 90–120 minutes
+description: Security review is most useful when tied to assets, actors, trust boundaries, and credible abuse paths.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: architecture-challenge
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-52
+objectives:
+  - Identify assets, trust boundaries, and attacker-controlled inputs.
+  - Prioritize threats by impact and plausible path.
+  - Link each chosen mitigation to a verification artifact.
+tags:
+  - phase-4
+  - threat-modeling
+skills:
+  - threat-modeling
 ---
 
 # Day 53 — Threat-model the workflow

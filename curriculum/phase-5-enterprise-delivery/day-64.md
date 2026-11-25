@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-64
 day: 64
 phase: 5
-status: Ready
+locale: en
+slug: add-a-deployment-pipeline
 title: Add a deployment pipeline
-estimated_effort: 90–120 minutes
+description: CI can reduce release risk but also executes code with permissions.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-63
+objectives:
+  - Define build, test, artifact, and release stages.
+  - Limit workflow permissions and credential exposure.
+  - Keep deployment approval separate from pull-request validation.
+tags:
+  - phase-5
+  - ci-cd-security
+skills:
+  - ci-cd-security
 ---
 
 # Day 64 — Add a deployment pipeline

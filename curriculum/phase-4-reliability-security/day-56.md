@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-56
 day: 56
 phase: 4
-status: Ready
+locale: en
+slug: review-supply-chain-and-dependency-risk
 title: Review supply chain and dependency risk
-estimated_effort: 75–100 minutes
+description: An application inherits risk from libraries, build actions, base images, and model artifacts.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-55
+objectives:
+  - Inventory direct and transitive dependencies and workflow actions.
+  - Identify update, vulnerability, and provenance signals.
+  - Set a practical review and response policy without claiming zero risk.
+tags:
+  - phase-4
+  - supply-chain-security
+skills:
+  - supply-chain-security
 ---
 
 # Day 56 — Review supply chain and dependency risk

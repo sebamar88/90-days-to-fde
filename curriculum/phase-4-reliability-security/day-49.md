@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-49
 day: 49
 phase: 4
-status: Ready
+locale: en
+slug: test-prompt-and-model-changes-for-regressions
 title: Test prompt and model changes for regressions
-estimated_effort: 90–120 minutes
+description: Prompt, schema, model, and orchestration changes can shift behavior in ways ordinary unit tests miss.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-48
+objectives:
+  - Record the exact candidate configuration and evaluation-set revision.
+  - Compare outputs case by case against the baseline.
+  - Block changes that regress a safety-critical slice.
+tags:
+  - phase-4
+  - regression-testing
+skills:
+  - regression-testing
 ---
 
 # Day 49 — Test prompt and model changes for regressions

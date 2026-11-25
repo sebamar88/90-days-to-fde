@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-77
 day: 77
 phase: 6
-status: Ready
+locale: en
+slug: close-the-highest-risk-design-gaps
 title: Close the highest-risk design gaps
-estimated_effort: 90–120 minutes
+description: The final implementation should resolve risks that could invalidate the demo or violate its safety boundary before adding polish.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: capstone-milestone
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-76
+objectives:
+  - Prioritize gaps by impact, likelihood, and detectability.
+  - Update the relevant ADR or threat-model record when assumptions change.
+  - Define a testable closure condition for each selected risk.
+tags:
+  - phase-6
+  - risk-prioritization
+skills:
+  - risk-prioritization
 ---
 
 # Day 77 — Close the highest-risk design gaps

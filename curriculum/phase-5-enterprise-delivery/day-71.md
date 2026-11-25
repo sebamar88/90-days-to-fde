@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-71
 day: 71
 phase: 5
-status: Ready
+locale: en
+slug: measure-workflow-impact-after-launch
 title: Measure workflow impact after launch
-estimated_effort: 75–100 minutes
+description: Technical quality does not prove business impact.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-70
+objectives:
+  - Define an outcome measure tied to the original discovery brief.
+  - Specify baseline, observation window, exclusions, and comparison risks.
+  - Include correction burden and safety outcomes, not just throughput.
+tags:
+  - phase-5
+  - impact-measurement
+skills:
+  - impact-measurement
 ---
 
 # Day 71 — Measure workflow impact after launch

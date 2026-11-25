@@ -16,5 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Validate curriculum structure and links
-        run: node scripts/validate-curriculum.mjs
+          cache: npm
+      - name: Install curriculum tooling
+        run: npm ci
+      - name: Test and validate curriculum
+        run: npm run check:curriculum

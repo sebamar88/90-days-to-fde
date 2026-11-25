@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-04
 day: 4
 phase: 1
-status: Ready
+locale: en
+slug: prepare-a-discovery-interview
 title: Prepare a discovery interview
-estimated_effort: 60–90 minutes
+description: Leading questions collect agreement, not evidence.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: business-discovery-exercise
+difficulty: foundational
+duration:
+  min: 60
+  max: 90
+prerequisites:
+  - day-03
+objectives:
+  - Ask open questions about specific past behavior.
+  - Probe for frequency, impact, exceptions, and workarounds.
+  - Set expectations and take notes responsibly.
+tags:
+  - phase-1
+  - interview-design
+skills:
+  - interview-design
 ---
 
 # Day 4 — Prepare a discovery interview

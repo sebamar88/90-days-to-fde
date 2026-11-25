@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-33
 day: 33
 phase: 3
-status: Ready
+locale: en
+slug: add-one-read-only-tool
 title: Add one read-only tool
-estimated_effort: 90–120 minutes
+description: Read-only tools let a workflow use enterprise context while keeping early integration risk small.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-32
+objectives:
+  - Implement the catalog contract against an in-memory fixture.
+  - Return only fields needed by downstream routing suggestions.
+  - Demonstrate that lookup does not change fixture state.
+tags:
+  - phase-3
+  - data-access
+skills:
+  - data-access
 ---
 
 # Day 33 — Add one read-only tool

@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/sebamar88/90-days-to-fde/schemas/lesson.schema.json",
+  "title": "90 Days to FDE lesson metadata, version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "day",
+    "phase",
+    "locale",
+    "slug",
+    "title",
+    "description",
+    "publication_status",
+    "review_status",
+    "test_coverage",
+    "learner_validation_status",
+    "content_type",
+    "difficulty",
+    "duration",
+    "prerequisites",
+    "objectives",
+    "tags",
+    "skills"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^day-(0[1-9]|[1-8][0-9]|90)$" },
+    "day": { "type": "integer", "minimum": 1, "maximum": 90 },
+    "phase": { "type": "integer", "minimum": 1, "maximum": 6 },
+    "locale": { "type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 100 },
+    "title": { "type": "string", "minLength": 5, "maxLength": 120 },
+    "description": { "type": "string", "minLength": 20, "maxLength": 200 },
+    "publication_status": { "enum": ["draft", "preview", "published", "archived"] },
+    "review_status": { "enum": ["unreviewed", "reviewed"] },
+    "test_coverage": { "enum": ["none", "curriculum-structure", "phase-lab", "lesson-specific"] },
+    "learner_validation_status": { "enum": ["not-validated", "validated"] },
+    "content_type": {
+      "enum": [
+        "concept-lesson",
+        "guided-technical-lab",
+        "business-discovery-exercise",
+        "architecture-challenge",
+        "enterprise-simulation",
+        "phase-assessment",
+        "capstone-milestone"
+      ]
+    },
+    "difficulty": { "enum": ["foundational", "intermediate", "advanced"] },
+    "duration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "integer", "minimum": 15, "maximum": 240 },
+        "max": { "type": "integer", "minimum": 15, "maximum": 240 }
+      }
+    },
+    "prerequisites": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^day-(0[1-9]|[1-8][0-9]|90)$" }
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 10, "maxLength": 220 }
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 60 }
+    },
+    "skills": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 60 }
+    }
+  }
+}

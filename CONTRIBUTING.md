@@ -4,7 +4,7 @@ Thanks for helping build a practical, open learning path. Start with a focused i
 
 ## Before you contribute
 
-- Read the [product vision](docs/product/vision.md), [quality standards](docs/quality/standards.md), and [licensing policy](docs/licensing.md).
+- Read the [product vision](docs/product/vision.md), [lesson quality standard](docs/quality/lesson-quality-standard.md), and [licensing policy](docs/licensing.md).
 - Search existing issues and lessons so work complements rather than duplicates them.
 - For a substantial curriculum change, open an issue describing the learner problem and evidence before drafting a large rewrite.
 
@@ -20,7 +20,7 @@ Thanks for helping build a practical, open learning path. Start with a focused i
 
 ## Local checks
 
-Run `node scripts/validate-curriculum.mjs` from the repository root. The script uses only Node.js built-in libraries. For lesson changes, also check the lesson against `docs/quality/standards.md` and preview Markdown links.
+Run `npm ci` and `npm run check:curriculum` from the repository root. For Phase 2 changes, run `uv sync --locked --extra test` and `uv run --locked pytest` from `curriculum/phase-2-production-ai/starter/`. For shared labs, run `uv sync --locked --extra test` and `uv run --locked pytest tests` from `curriculum/labs/`. These commands use the committed lockfiles; neither suite needs paid services. For lesson changes, use `docs/quality/lesson-quality-standard.md` and the matching file in `templates/`.
 
 ## Pull requests
 

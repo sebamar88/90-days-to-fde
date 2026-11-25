@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-46
 day: 46
 phase: 4
-status: Ready
+locale: en
+slug: build-a-task-specific-evaluation-set
 title: Build a task-specific evaluation set
-estimated_effort: 90–120 minutes
+description: An evaluation set is a measurement instrument.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 90
+  max: 120
+prerequisites:
+  - day-45
+objectives:
+  - Define evaluation units from the task and decision boundary.
+  - Cover ordinary, ambiguous, adversarial, and failure cases.
+  - Record provenance and limitations for every case.
+tags:
+  - phase-4
+  - evaluation-datasets
+skills:
+  - evaluation-datasets
 ---
 
 # Day 46 — Build a task-specific evaluation set

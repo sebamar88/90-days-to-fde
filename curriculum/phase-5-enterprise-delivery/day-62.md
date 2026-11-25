@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-62
 day: 62
 phase: 5
-status: Ready
+locale: en
+slug: separate-configuration-and-secrets
 title: Separate configuration and secrets
-estimated_effort: 75–100 minutes
+description: Environment-specific settings and credentials have different lifecycles and access needs.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: advanced
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-61
+objectives:
+  - Classify configuration versus secret material.
+  - Load settings without committing credentials.
+  - Define rotation, missing-value, and redaction behavior.
+tags:
+  - phase-5
+  - secret-management
+skills:
+  - secret-management
 ---
 
 # Day 62 — Separate configuration and secrets

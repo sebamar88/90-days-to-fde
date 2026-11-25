@@ -1,9 +1,32 @@
 ---
+schema_version: 1
+id: day-21
 day: 21
 phase: 2
-status: Ready
+locale: en
+slug: abstain-when-the-request-is-ambiguous
 title: Abstain when the request is ambiguous
-estimated_effort: 75–100 minutes
+description: Valid structure does not mean the content is known.
+publication_status: preview
+review_status: unreviewed
+test_coverage: phase-lab
+learner_validation_status: not-validated
+content_type: guided-technical-lab
+difficulty: intermediate
+duration:
+  min: 75
+  max: 100
+prerequisites:
+  - day-20
+objectives:
+  - Define task-specific conditions for abstention and human clarification.
+  - Preserve source evidence for extracted fields.
+  - Avoid treating model-reported confidence as a calibrated probability.
+tags:
+  - phase-2
+  - safe-abstention
+skills:
+  - safe-abstention
 ---
 
 # Day 21 — Abstain when the request is ambiguous
