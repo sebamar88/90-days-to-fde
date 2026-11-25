@@ -37,3 +37,6 @@ Pass when each SLI is computable from defined events, customer-facing and safety
 ## Reflection
 
 Which objective would create an incentive to accept risky drafts if used alone?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

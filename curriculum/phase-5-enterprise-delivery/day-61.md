@@ -37,3 +37,6 @@ Pass when the chosen shape follows explicit constraints, operational ownership i
 ## Reflection
 
 Which single answer from Meridian's platform team could reverse your deployment recommendation?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

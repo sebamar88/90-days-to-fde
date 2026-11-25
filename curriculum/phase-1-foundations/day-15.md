@@ -37,3 +37,6 @@ Score each 0 (missing), 1 (partial), or 2 (clear and evidence-backed): problem f
 ## Reflection
 
 Which decision in your packet is strongest, and which depends on the weakest evidence?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -26,7 +26,11 @@ Start with the smallest operational shape that meets the evidence-backed use cas
 
 ## Phase gate
 
-Score each criterion 0 (missing), 1 (partial), or 2 (evidenced). Pass at 14/18 with no zero for secret handling, rollback, support ownership, or user-impact measurement. Demonstrate a reproducible environment, a release/rollback rehearsal, an operator runbook, and a user-facing explanation. All launch decisions remain hypothetical until real customer owners approve them.
+Score each criterion 0 (missing), 1 (partial), or 2 (evidenced). Pass at 14/20 with no zero for secret handling, rollback, support ownership, or user-impact measurement. Demonstrate a reproducible environment, a release/rollback rehearsal, an operator runbook, and a user-facing explanation. All launch decisions remain hypothetical until real customer owners approve them.
+
+## Lab and automated tests
+
+Use the [Phase 5 delivery lab](../labs/README.md) and [deployment/release tests](../labs/tests/test_phase5_delivery.py). Tests check secret-source rules, hosted-deployment evidence, safety release blocks, and cost arithmetic.
 
 ## References
 

@@ -26,3 +26,7 @@ Keep these artifacts together in a `meridian-discovery/` folder in your own lear
 ## Phase gate
 
 Proceed when a skeptical stakeholder can recognize the problem statement, proposed measure, constraints, and first-slice boundary, and when your evidence log distinguishes observed facts from assumptions. If the evidence does not support AI, recommend a simpler path and record why.
+
+## Lab and automated tests
+
+Use the [Phase 1 artifact lab](../labs/README.md) and its [discovery-packet tests](../labs/tests/test_phase1_discovery_packet.py). They check packet completeness and evidence labels; they do not automate judgments about interview quality or the strength of a business recommendation.

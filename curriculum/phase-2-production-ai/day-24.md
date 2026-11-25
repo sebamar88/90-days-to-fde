@@ -37,3 +37,6 @@ Pass when generating a suggestion cannot trigger a write, the fake rejects inval
 ## Reflection
 
 What customer and security-owner decisions would you need before replacing the fake with a real adapter?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

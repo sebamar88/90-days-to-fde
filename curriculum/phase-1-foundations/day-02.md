@@ -37,3 +37,6 @@ Pass if the map includes the people who do the intake work and the people who ow
 ## Reflection
 
 Which stakeholder could quietly block adoption even if the sponsor approves the project?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

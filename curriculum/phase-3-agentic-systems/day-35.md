@@ -37,3 +37,6 @@ Pass when only an authorized human can approve, the approval references the exac
 ## Reflection
 
 Which field change should invalidate approval even if the screen still looks almost the same?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

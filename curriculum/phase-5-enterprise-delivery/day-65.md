@@ -37,3 +37,6 @@ Pass when a named owner can halt promotion, triggers are measurable, last-known-
 ## Reflection
 
 Which change cannot be undone by redeploying the previous application version?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

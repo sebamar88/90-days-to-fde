@@ -37,3 +37,6 @@ Pass if scope can be tested without production write access, preserves human con
 ## Reflection
 
 What evidence would justify moving from recommendation to automatic action?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

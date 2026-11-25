@@ -37,3 +37,6 @@ Pass when no critical blocker is waived silently, decision authority is explicit
 ## Reflection
 
 Which unresolved blocker should prevent even a limited pilot?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

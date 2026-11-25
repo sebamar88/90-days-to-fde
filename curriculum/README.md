@@ -8,6 +8,8 @@ Do not assume AI is the answer. The learner must validate the workflow and compa
 
 **Status:** Days 1–90 have lesson pages and assessments. Learner feedback and demand validation remain ongoing; simulated exercises are not real customer validation.
 
+Each lesson links to its [phase lab and test suite](labs/README.md). The suites check executable behavior and artifact structure; human rubrics assess qualitative judgment.
+
 ## Phase 1 — Foundations & Business Discovery (Days 1–15)
 
 **Outcome:** a customer-backed problem brief, workflow map, success measures, constraints, solution options, architecture context, ADR, thin-slice plan, and playback.

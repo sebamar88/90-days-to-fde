@@ -37,3 +37,6 @@ Pass if a non-AI option is seriously evaluated, uncertainty and human review are
 ## Reflection
 
 Which part of the workflow is genuinely language-variable, and which part is ordinary validation or integration?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

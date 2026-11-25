@@ -37,3 +37,6 @@ Pass when every critical responsibility has one accountable role, backup coverag
 ## Reflection
 
 Which ownership gap would make a controlled pilot irresponsible even if the system were technically sound?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when another learner can reproduce the local demo from documented steps, no
 ## Reflection
 
 What setup step is most likely to fail for a customer engineer behind a restricted network?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

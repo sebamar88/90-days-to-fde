@@ -37,3 +37,6 @@ Score 0 (missing), 1 (partial), or 2 (evidenced) for: stable contract; determini
 ## Reflection
 
 What result would convince you to remove the model from the design?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

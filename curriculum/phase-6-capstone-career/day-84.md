@@ -37,3 +37,6 @@ Pass when the change addresses an observed issue, relevant safety tests remain g
 ## Reflection
 
 What did you choose not to change because the evidence was too weak?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

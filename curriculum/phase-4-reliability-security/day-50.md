@@ -41,3 +41,6 @@ What diagnostic detail is useful to a restricted audit record but unsafe in a br
 ## References
 
 - [OpenTelemetry semantic conventions](https://opentelemetry.io/docs/concepts/semantic-conventions/)
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

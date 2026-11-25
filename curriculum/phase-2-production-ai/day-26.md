@@ -37,3 +37,6 @@ Pass when changing a prompt changes a visible version or commit, evaluation outp
 ## Reflection
 
 How would you diagnose a regression if the system recorded only the model name?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass if actors and handoffs are visible, unknown steps are marked, and the workf
 ## Reflection
 
 What important work might happen outside the official ticketing system?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

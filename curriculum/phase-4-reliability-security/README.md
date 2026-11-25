@@ -28,6 +28,10 @@ Keep task quality, operational reliability, and safety as separate dimensions. D
 
 Pass at 14/18 on the Day 60 rubric, with no zero for evaluation validity, unsafe-action controls, privacy, or incident containment. Demonstrate at least one failing evaluation slice, one safe degraded mode, one denied authorization case, and one incident timeline. “No known issues” is not acceptable evidence; list limits and owners.
 
+## Lab and automated tests
+
+Use the [Phase 4 reference lab](../labs/README.md) and [evaluation/security tests](../labs/tests/test_phase4_evaluation_security.py). Tests verify denominators and slices, safety-critical release blocking, and allowlist-based audit redaction.
+
 ## References
 
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) and [Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) — checked 2026-11-25.

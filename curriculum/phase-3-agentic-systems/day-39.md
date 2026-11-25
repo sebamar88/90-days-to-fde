@@ -37,3 +37,6 @@ Pass when total retries and elapsed time are bounded, non-retryable errors are n
 ## Reflection
 
 When is “unknown whether it succeeded” safer than reporting failure or retrying immediately?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

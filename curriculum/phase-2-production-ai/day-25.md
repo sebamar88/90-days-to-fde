@@ -37,3 +37,6 @@ Pass when retries are bounded, the same approved action does not create duplicat
 ## Reflection
 
 Which failure state must be represented separately from “failed” and “succeeded”?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

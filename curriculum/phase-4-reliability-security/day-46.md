@@ -37,3 +37,6 @@ Pass when every label has a rationale, each critical control has at least one po
 ## Reflection
 
 What behavior could score highly on your set while still frustrating a real coordinator?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

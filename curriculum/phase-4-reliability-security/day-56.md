@@ -37,3 +37,6 @@ Pass when direct dependencies, CI actions, and optional model artifacts are cove
 ## Reflection
 
 Which pinning or verification choice would create the most maintenance burden for this small open-source project?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

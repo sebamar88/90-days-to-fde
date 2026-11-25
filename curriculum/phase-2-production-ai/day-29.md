@@ -41,3 +41,6 @@ What did the demo make look easier or more certain than it actually is?
 ## References
 
 - [Ollama structured outputs](https://ollama.com/blog/structured-outputs)
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when every outcome claim has an evidence status, scope fits the remaining d
 ## Reflection
 
 Which attractive feature would you cut first to protect the evidence quality of the capstone?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

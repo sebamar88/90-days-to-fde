@@ -1,0 +1,20 @@
+{
+  "scenario": "synthetic_meridian",
+  "artifacts": [
+    {"day": 1, "name": "problem-brief", "evidence_status": "simulated", "content": "Synthetic practice brief; no real customer claim."},
+    {"day": 2, "name": "stakeholder-map", "evidence_status": "simulated", "content": "Fictional roles and interests for practice."},
+    {"day": 3, "name": "workflow-map", "evidence_status": "simulated", "content": "Fictional current-state maintenance workflow."},
+    {"day": 4, "name": "interview-guide", "evidence_status": "synthetic", "content": "Practice questions for a simulated discovery session."},
+    {"day": 5, "name": "discovery-notes", "evidence_status": "simulated", "content": "Role-play notes explicitly labeled simulated."},
+    {"day": 6, "name": "evidence-assumption-register", "evidence_status": "simulated", "content": "Claims separated into synthetic evidence and assumptions."},
+    {"day": 7, "name": "outcome-and-guardrails", "evidence_status": "assumption", "content": "Provisional outcome and safety guardrails."},
+    {"day": 8, "name": "data-access-constraints", "evidence_status": "assumption", "content": "Unverified data and access questions."},
+    {"day": 9, "name": "ai-fit-assessment", "evidence_status": "simulated", "content": "Comparison against a deterministic alternative."},
+    {"day": 10, "name": "solution-options", "evidence_status": "simulated", "content": "Three bounded solution options and trade-offs."},
+    {"day": 11, "name": "system-context", "evidence_status": "simulated", "content": "System context with fictional boundaries."},
+    {"day": 12, "name": "decision-record", "evidence_status": "simulated", "content": "Practice ADR with decision and revisit trigger."},
+    {"day": 13, "name": "thin-slice-plan", "evidence_status": "simulated", "content": "Small draft-only slice with acceptance evidence."},
+    {"day": 14, "name": "customer-playback", "evidence_status": "simulated", "content": "Playback script, not a real customer response."},
+    {"day": 15, "name": "phase-review", "evidence_status": "simulated", "content": "Phase gate with open evidence gaps."}
+  ]
+}

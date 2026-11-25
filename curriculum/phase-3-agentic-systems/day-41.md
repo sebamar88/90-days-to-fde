@@ -37,3 +37,6 @@ Pass when the same approved operation creates at most one sandbox record, change
 ## Reflection
 
 Which key fields would accidentally cause two identical approved actions to be treated as different operations?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

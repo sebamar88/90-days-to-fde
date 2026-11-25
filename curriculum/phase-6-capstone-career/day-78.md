@@ -37,3 +37,6 @@ Pass when a clean local run reproduces the expected draft, all inputs are synthe
 ## Reflection
 
 Which interface made this integration easier, and which contract still leaks implementation detail?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

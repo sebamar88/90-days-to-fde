@@ -18,5 +18,8 @@ Name the artifact or behavior without prescribing an answer where judgment is in
 - [ ] Assumptions and unknowns are labeled.
 - [ ] No real personal data, secrets, or unlicensed material is included.
 
+## Automated checks
+Name the phase test command or test file that verifies executable/structural requirements. State which qualitative criteria still require the assessment rubric.
+
 ## Optional extension
 Offer a stretch task that does not block the core outcome.

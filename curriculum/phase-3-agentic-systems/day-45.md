@@ -37,3 +37,6 @@ Score 0 (missing), 1 (partial), or 2 (evidenced): least-privilege tools; validat
 ## Reflection
 
 Which single unresolved assumption blocks a responsible move into Phase 4?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

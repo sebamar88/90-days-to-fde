@@ -30,6 +30,10 @@ Keep the model outside the trust boundary: tool schemas validate inputs, applica
 
 Score each review criterion 0 (missing), 1 (partial), or 2 (evidenced). Pass at 14/18 with no zero for least privilege, approval binding, or duplicate-action safety. Demonstrate a read-only lookup, an approved sandbox draft, a denied unauthorized action, a resumed workflow, and a recoverable downstream failure. Revise before Phase 4 if a model or user can bypass application authorization.
 
+## Lab and automated tests
+
+Use the [Phase 3 reference lab](../labs/README.md) and [workflow tests](../labs/tests/test_phase3_workflow.py). Tests cover tool scope, authorization, approval binding, resumability, duplicate prevention, and retry bounds.
+
 ## References
 
 - [OWASP Agentic AI — Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) — checked 2026-11-25.

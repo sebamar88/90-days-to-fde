@@ -37,3 +37,6 @@ Pass when every transition has a guard, stale state is rejected, resume cannot b
 ## Reflection
 
 What state must be durable for audit, and what transient data should be recomputed instead?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

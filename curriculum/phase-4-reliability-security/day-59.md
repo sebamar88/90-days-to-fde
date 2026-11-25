@@ -37,3 +37,6 @@ Pass when every critical risk has evidence or a release block, every finding has
 ## Reflection
 
 What would make you recommend stopping the pilot even if all planned tests pass?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when only an authorized actor can approve the exact preview, every denial o
 ## Reflection
 
 What is the strongest evidence that a human approval is about the action the system actually performed?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when every matrix cell is exercised, denied requests cause no adapter call,
 ## Reflection
 
 Which resource attribute should be reloaded at action time to avoid trusting stale authorization state?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when the brief clearly distinguishes quote from interpretation, does not pr
 ## Reflection
 
 What would you need to observe before claiming the proposed system could reduce delay?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

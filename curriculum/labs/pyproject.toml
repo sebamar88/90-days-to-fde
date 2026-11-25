@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "90-days-to-fde-labs"
+version = "0.1.0"
+description = "Tested, synthetic reference labs for the 90 Days to FDE curriculum"
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "../phase-2-production-ai/starter/src"]
+addopts = "-ra"

@@ -37,3 +37,6 @@ Pass when app/service tests run with the fake, default behavior needs no credent
 ## Reflection
 
 What provider-specific feature would create enough value to justify adding it to the interface?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

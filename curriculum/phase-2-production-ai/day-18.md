@@ -37,3 +37,6 @@ Pass when every record parses, every expected label has a rationale, there is at
 ## Reflection
 
 What real-world distribution claim can this synthetic set not support?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when the customer round includes clarifying questions and a playback, the t
 ## Reflection
 
 Which question helped you discover a constraint before designing a solution?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

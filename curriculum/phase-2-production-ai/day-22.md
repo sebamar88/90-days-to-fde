@@ -37,3 +37,6 @@ Pass when retrieval is justified by a named knowledge gap, permissions/freshness
 ## Reflection
 
 Which evidence would show that retrieval improves the coordinator's outcome rather than just increasing technical complexity?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

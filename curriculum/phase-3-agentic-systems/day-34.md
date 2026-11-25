@@ -37,3 +37,6 @@ Pass when every invalid response is rejected, the workflow remains non-writable 
 ## Reflection
 
 Why validate a response from an internal service instead of trusting the service owner?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

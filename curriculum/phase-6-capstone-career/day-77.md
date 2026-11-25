@@ -37,3 +37,6 @@ Pass when the highest-severity risks have testable acceptance conditions, design
 ## Reflection
 
 Which risk is not yours to “fix” as an engineer because it requires a customer decision?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

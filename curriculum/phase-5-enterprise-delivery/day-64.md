@@ -41,3 +41,6 @@ What can a malicious contribution change if a workflow runs with a write token?
 ## References
 
 - [GitHub Actions security](https://docs.github.com/en/actions/how-tos/secure-your-work)
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

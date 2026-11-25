@@ -37,3 +37,6 @@ Pass when every consequential action has a deterministic application-controlled 
 ## Reflection
 
 Which uncertainty actually requires model-directed planning, and which only makes the diagram look more advanced?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

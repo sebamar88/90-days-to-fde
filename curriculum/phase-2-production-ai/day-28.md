@@ -37,3 +37,6 @@ Pass when the comparison uses identical cases, exposes high-impact errors and ab
 ## Reflection
 
 Would you keep the model if it improves average extraction but worsens the unsafe-routing slice?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass if people and systems are distinct, data and authority flows are visible, a
 ## Reflection
 
 Where does data cross an organizational or trust boundary in your diagram?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -2,13 +2,15 @@
 
 ## Lesson acceptance
 
-Every published lesson must include valid front matter (`day`, `phase`, `status`, `title`, `estimated_effort`) and these sections: why it matters, scenario, outcomes, exercise, deliverable, assessment, and reflection. A phase review may use a rubric instead of a separate assessment section only when its scoring and pass threshold are explicit.
+Every published lesson must include valid front matter (`day`, `phase`, `status`, `title`, `estimated_effort`) and these sections: why it matters, scenario, outcomes, exercise, deliverable, assessment, reflection, and automated lab. Each lesson must link to an existing test suite for its phase. A phase review may use a rubric instead of a separate assessment section only when its scoring and pass threshold are explicit.
 
 ## Curriculum quality
 
 - Outcomes use observable verbs and fit the target learner.
 - Activities produce a named artifact or demonstrated behavior.
 - Assessments state evidence, criteria, and a meaningful pass/revise condition.
+- Each phase has a runnable lab and automated tests; CI runs all phase suites together.
+- Tests cover executable contracts and structural evidence. Human rubrics remain responsible for qualitative judgment such as discovery quality, trade-offs, and communication.
 - Scenarios label simulation, keep data synthetic, and avoid invented validation claims.
 - Lessons build on prior work and name prerequisites when needed.
 - Technical recommendations explain constraints and trade-offs; AI is not presumed necessary.

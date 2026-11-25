@@ -37,3 +37,6 @@ Pass when no usable secret is committed, required settings are validated at star
 ## Reflection
 
 Which secret could be removed entirely by choosing a different integration boundary?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

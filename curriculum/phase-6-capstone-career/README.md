@@ -27,3 +27,7 @@ The capstone suggests and prepares drafts; it does not create or route real work
 ## Final gate
 
 Score each Day 90 criterion 0 (missing), 1 (partial), or 2 (evidenced). Pass at 16/20 with no zero for approval/authorization, evaluation honesty, privacy, or failure-path demonstration. The reviewer may mark “not evidenced” where the work is only simulated. Completion is educational evidence, not a job guarantee, certification, production approval, or proof of customer impact.
+
+## Lab and automated tests
+
+Use the [Phase 6 capstone lab](../labs/README.md) and [end-to-end tests](../labs/tests/test_phase6_capstone.py). They exercise abstention, approval-gated sandbox submission, authorization, idempotent replay, and release blocking when evaluation fails.

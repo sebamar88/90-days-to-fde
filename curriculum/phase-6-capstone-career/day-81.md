@@ -37,3 +37,6 @@ Pass when an unfamiliar operator can find each failure, stop unsafe writes, and 
 ## Reflection
 
 Which operational instruction still depends on knowledge that only the developer has?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

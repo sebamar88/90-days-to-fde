@@ -37,3 +37,6 @@ Pass if sensitive data is identified as a hypothesis pending policy confirmation
 ## Reflection
 
 What should the system do when it cannot access the work-order system or verify a user's authority?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

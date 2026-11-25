@@ -37,3 +37,6 @@ Pass when the baseline is deterministic, never invents a location, preserves uns
 ## Reflection
 
 Which rule is likely to become brittle as Meridian's vocabulary changes?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when small denominators remain visible, errors are not hidden by averages, 
 ## Reflection
 
 Which slice deserves more data before you recommend a model or threshold change?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

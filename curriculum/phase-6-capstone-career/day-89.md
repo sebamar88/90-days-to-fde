@@ -37,3 +37,6 @@ Pass when every claim links to evidence, simulated and production experience are
 ## Reflection
 
 Which skill is visible in your artifacts but hardest to communicate in a short interview answer?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

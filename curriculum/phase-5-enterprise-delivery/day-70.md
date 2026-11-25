@@ -37,3 +37,6 @@ Pass when safety reports have an escalation path, ordinary feedback avoids unnec
 ## Reflection
 
 How will a coordinator know their correction was reviewed and what changed as a result?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

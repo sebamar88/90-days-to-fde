@@ -37,3 +37,6 @@ Pass when the primary measure matches a customer outcome, guardrails can veto a 
 ## Reflection
 
 What result would show that the assistant increases work even if average response time falls?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

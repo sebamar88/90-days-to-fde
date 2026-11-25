@@ -37,3 +37,6 @@ Pass when simulated statements are labeled as such, no unapproved production beh
 ## Reflection
 
 How would you respond if the sponsor interpreted a prototype demo as a production commitment?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

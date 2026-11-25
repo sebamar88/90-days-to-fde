@@ -37,3 +37,6 @@ Pass when every external call has an owner, data classification, and failure pat
 ## Reflection
 
 Which boundary would change your design most if its owner prohibited outbound network access?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

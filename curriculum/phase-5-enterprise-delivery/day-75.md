@@ -37,3 +37,6 @@ Score 0 (missing), 1 (partial), or 2 (evidenced): deployment fit; secret/config 
 ## Reflection
 
 What customer-owned decision must happen before your provisional deployment plan becomes a real plan?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

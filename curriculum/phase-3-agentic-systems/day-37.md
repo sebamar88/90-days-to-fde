@@ -37,3 +37,6 @@ Pass when all five cases match the matrix, denial happens before any external ca
 ## Reflection
 
 Where should permission be checked again when a request passes through multiple services?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

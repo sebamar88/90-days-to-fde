@@ -37,3 +37,6 @@ Pass if the metric can be measured from named events, guardrails include correct
 ## Reflection
 
 How could improving the primary metric make the requester or technician experience worse?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

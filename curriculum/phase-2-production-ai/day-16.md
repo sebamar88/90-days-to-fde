@@ -43,3 +43,6 @@ Which contract decision will let you swap providers later without changing the c
 - [Python `venv`](https://docs.python.org/3/library/venv.html)
 - [FastAPI testing](https://fastapi.tiangolo.com/tutorial/testing/)
 - [Starlette TestClient](https://www.starlette.io/testclient/)
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

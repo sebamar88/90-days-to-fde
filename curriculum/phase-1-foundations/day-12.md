@@ -37,3 +37,6 @@ Pass if at least two credible alternatives are compared, the decision follows st
 ## Reflection
 
 Which part of this decision belongs to the customer or security owner rather than the engineering team?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

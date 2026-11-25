@@ -37,3 +37,6 @@ Pass when a named role can stop writes, evidence is preserved without copying se
 ## Reflection
 
 What decision would be hardest to make when the impact is still uncertain?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

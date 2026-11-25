@@ -43,3 +43,6 @@ Which failures should the API return to a coordinator, and which should remain i
 - [Pydantic models and validation](https://docs.pydantic.dev/latest/concepts/models/)
 - [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs)
 - [Ollama structured outputs](https://ollama.com/blog/structured-outputs)
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

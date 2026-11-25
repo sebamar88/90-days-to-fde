@@ -37,3 +37,6 @@ Pass when another learner can reproduce and stop the system, no secret is expose
 ## Reflection
 
 What would need to change before this deployment could handle real customer traffic?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

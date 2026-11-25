@@ -37,3 +37,6 @@ Pass when formulas are inspectable, one-time and recurring costs are separated, 
 ## Reflection
 
 Which missing customer input contributes the most uncertainty to your estimate?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

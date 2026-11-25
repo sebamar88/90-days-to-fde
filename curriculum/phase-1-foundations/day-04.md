@@ -37,3 +37,6 @@ Pass if at least six questions ask about actual behavior, no question assumes AI
 ## Reflection
 
 Which of your questions is most likely to bias the answer, and how can you rephrase it?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

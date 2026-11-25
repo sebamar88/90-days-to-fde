@@ -37,3 +37,6 @@ Pass when all four injections are reproducible, no failure bypasses authorizatio
 ## Reflection
 
 Which fault was hardest to distinguish from a slow but healthy dependency?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when schemas reject extra or oversized values, the read tool cannot mutate 
 ## Reflection
 
 What harmful action becomes possible if a tool receives a generic URL or arbitrary query instead of a narrow identifier?
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

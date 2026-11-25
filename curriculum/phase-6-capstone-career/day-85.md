@@ -37,3 +37,6 @@ Pass when a reviewer can identify the trust boundary, action path, rejected opti
 ## Reflection
 
 Which architectural choice would you revisit first if request volume or data residency changed?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

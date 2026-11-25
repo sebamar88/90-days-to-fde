@@ -37,3 +37,6 @@ Pass when a reader can distinguish implementation from validation, all claims li
 ## Reflection
 
 What limitation, if stated plainly, makes the case study more credible?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

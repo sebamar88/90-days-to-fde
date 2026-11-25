@@ -37,3 +37,6 @@ Pass when every metric has a denominator and interpretation, hard gates are expl
 ## Reflection
 
 Which metric would you refuse to combine into a single quality score, and why?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

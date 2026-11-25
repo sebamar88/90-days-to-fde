@@ -8,7 +8,8 @@ The canonical source is plain Markdown in `curriculum/`, one page per day and a 
 
 | Path | Responsibility |
 |---|---|
-| `curriculum/phase-N-*/` | Phase overview and lesson pages |
+| `curriculum/phase-N-*/` | Phase overview and lesson pages linked to phase tests |
+| `curriculum/labs/` | Cumulative reference labs, synthetic fixtures, and cross-phase tests |
 | `templates/` | Lesson, exercise, assessment, ADR authoring formats |
 | `docs/product/` | Vision and audience |
 | `docs/architecture/` | Repository and system design conventions |

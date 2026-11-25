@@ -37,3 +37,6 @@ Pass when every call has a timeout, total request time is bounded, fallback is v
 ## Reflection
 
 Which dependency can fail open, and which must always fail closed for this workflow?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

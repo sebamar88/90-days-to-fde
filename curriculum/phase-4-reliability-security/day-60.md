@@ -37,3 +37,6 @@ Score 0 (missing), 1 (partial), or 2 (evidenced): evaluation design; slice analy
 ## Reflection
 
 What new evidence would change your release recommendation most?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

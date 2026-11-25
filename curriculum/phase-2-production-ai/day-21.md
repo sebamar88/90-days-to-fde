@@ -37,3 +37,6 @@ Pass when ambiguous and conflicting requests produce a review/clarification outc
 ## Reflection
 
 Which errors are safer to miss, and which errors require immediate human escalation?
+## Automated lab
+
+Run the [Phase 2 test suite](../phase-2-production-ai/starter/tests/) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when the receiver can reproduce the local demo and find recovery/ownership 
 ## Reflection
 
 What knowledge was still trapped in your head rather than in the handoff?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

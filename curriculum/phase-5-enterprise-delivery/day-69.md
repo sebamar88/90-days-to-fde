@@ -37,3 +37,6 @@ Pass when the material distinguishes suggestion from fact, teaches safe correcti
 ## Reflection
 
 What user behavior would reveal that the interface is shifting risk onto coordinators?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass if every acceptance criterion is observable, at least two cases cause the s
 ## Reflection
 
 What is the smallest test that would show whether the draft saves meaningful effort?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

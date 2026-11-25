@@ -41,3 +41,6 @@ Pass if the notes preserve the distinction between supplied facts and simulated 
 ## Reflection
 
 Where did you feel tempted to suggest a feature instead of asking another question?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

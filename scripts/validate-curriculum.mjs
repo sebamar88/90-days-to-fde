@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const curriculum = path.join(root, 'curriculum');
 const requiredFields = ['day', 'phase', 'status', 'title', 'estimated_effort'];
-const requiredHeadings = ['why this matters', 'scenario', 'outcomes', 'exercise', 'deliverable', 'assessment', 'reflection'];
+const requiredHeadings = ['why this matters', 'scenario', 'outcomes', 'exercise', 'deliverable', 'assessment', 'reflection', 'automated lab'];
 const errors = [];
 
 function walk(directory) {
@@ -152,5 +152,5 @@ if (errors.length) {
   console.error(`Curriculum validation failed with ${errors.length} issue(s).`);
   process.exitCode = 1;
 } else {
-  console.log('Curriculum validation passed: 90 lessons, six phase overviews, roadmap coverage, and local Markdown links.');
+  console.log('Curriculum validation passed: 90 lessons link to lab tests; six phase overviews, roadmap coverage, and local Markdown links are valid.');
 }

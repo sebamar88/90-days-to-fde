@@ -37,3 +37,6 @@ Pass when observations distinguish behavior from interpretation, no simulated co
 ## Reflection
 
 What did a participant misunderstand that your technical explanation had made feel obvious?
+## Automated lab
+
+Run the [Phase 6 test suite](../labs/tests/test_phase6_capstone.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

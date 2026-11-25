@@ -37,3 +37,6 @@ Pass when another learner can reproduce the run, all differences are inspectable
 ## Reflection
 
 What evidence would distinguish a robust improvement from a lucky change on a tiny fixture?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

@@ -37,3 +37,6 @@ Pass when every stored or transmitted field has a purpose and owner, raw text is
 ## Reflection
 
 What information can the service discard immediately after producing a reviewable suggestion?
+## Automated lab
+
+Run the [Phase 4 test suite](../labs/tests/test_phase4_evaluation_security.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

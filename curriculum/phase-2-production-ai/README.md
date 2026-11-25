@@ -31,3 +31,7 @@ The reference implementation follows the stack named in the project README: Pyth
 ## Phase gate
 
 Pass when the learner can replay the same synthetic cases against the rules and optional model path, explain quality and operational trade-offs with measured evidence, validate all output before use, and demonstrate that ambiguous or unsafe requests stay in human review. A model that does not beat the baseline on the agreed task should not be retained just because it is more sophisticated.
+
+## Lab and automated tests
+
+Run the [Phase 2 starter tests](starter/tests/) from the [shared lab workspace](../labs/README.md). The all-phase CI workflow runs these tests together with Phases 1 and 3–6.

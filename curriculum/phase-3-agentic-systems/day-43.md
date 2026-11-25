@@ -37,3 +37,6 @@ Pass when every case has a rationale, unsafe invocation is reported separately, 
 ## Reflection
 
 Would you ship a planner with better task completion but one attempted unauthorized action? State your release rule.
+## Automated lab
+
+Run the [Phase 3 test suite](../labs/tests/test_phase3_workflow.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

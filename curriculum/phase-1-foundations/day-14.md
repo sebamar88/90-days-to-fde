@@ -37,3 +37,6 @@ Pass if the summary does not overstate simulated evidence, asks the customer to 
 ## Reflection
 
 What feedback would cause you to stop building the proposed slice?
+## Automated lab
+
+Run the [Phase 1 test suite](../labs/tests/test_phase1_discovery_packet.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.

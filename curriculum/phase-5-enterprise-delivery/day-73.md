@@ -37,3 +37,6 @@ Pass when unsafe behavior is contained before optimization, users receive an acc
 ## Reflection
 
 How would you communicate uncertainty without minimizing risk or speculating about cause?
+## Automated lab
+
+Run the [Phase 5 test suite](../labs/tests/test_phase5_delivery.py) alongside the assessment. The tests check the phase reference lab; use the lesson rubric for judgment, communication, and other qualitative evidence.
